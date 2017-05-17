@@ -1,0 +1,5 @@
+E:\Project C#\Luas Lingkaran\Luas Lingkaran\bin\Debug\Luas Lingkaran.exe.config
+E:\Project C#\Luas Lingkaran\Luas Lingkaran\bin\Debug\Luas Lingkaran.exe
+E:\Project C#\Luas Lingkaran\Luas Lingkaran\bin\Debug\Luas Lingkaran.pdb
+E:\Project C#\Luas Lingkaran\Luas Lingkaran\obj\Debug\Luas Lingkaran.exe
+E:\Project C#\Luas Lingkaran\Luas Lingkaran\obj\Debug\Luas Lingkaran.pdb

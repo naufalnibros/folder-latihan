@@ -1,0 +1,98 @@
+<!DOCTYPE html>
+<html xmlns="htttp://www.w3.org/1999/xhtml">
+<meta charset="utf-8">
+<head>
+	<title>Belajar JavaScript</title>
+</head>
+<style>
+	#wrap {
+		font-size: 25px;
+		background: purple;
+		color: white;
+	}
+	#wrap2 {
+		font-size: 25px;
+		background: blue;
+		color: white;
+	}
+	#wrap3 {
+		font-size: 25px;
+		background: green;
+		color: white;
+	}
+	#wrap4 {
+		font-size: 25px;
+		background: rgba(137, 176, 229, 1);
+		color: white;
+	}
+	#wrap5 {
+		font-size: 25px;
+		background: rgb(51, 130, 191);
+		color: white;
+	}
+</style>
+<body>
+	<h1>Menghubungkan JavaScript</h1>
+	<img src="logos.png" height="100" width="100" alt="logo">
+	
+	<div id="wrap"></div>
+	<div id="wrap2"></div>
+	<div id="wrap3"></div>
+	<div id="wrap4"></div>
+	<div id="wrap5"></div>
+
+	<script type="text/javascript" >
+		//------ Array pada JavaScript ------
+
+		//array dimulai dari angka 0
+		var kotak = ["muhammad", "naufal", 1234];
+		kotak[2] = "nibros";
+
+		document.getElementById('wrap').innerHTML = kotak;
+
+		//------ Beberapa Metode pd Array ------
+		var nama = ["sari", "ainun", "tika"];
+
+		//sort() = untuk mengurutkan secara abjad
+		// var hasil = nama.sort();
+
+		//reverse() = untuk membalik akhir ke awal (reverse tdk berdasarkan abjad)
+		// hasil = nama.reverse();
+
+		//concat() = untuk menggabungkan 2 array atau lebih
+		var nama2 = ["naufal", "hadi", "iqbal"];
+		var nama3 = ["saka", "dian", "risa"];
+		hasil = nama.concat(nama2, nama3);
+
+		//length() = untuk melihat berapa jumlah array
+		// hasil = hasil.length;
+
+		//join("separator") = untuk memberikan jarak/pemisah/separator pada array
+		hasil = hasil.join(" - ");
+
+		document.getElementById('wrap2').innerHTML = hasil;
+
+		//splice->add(mulai, dihapus?, isi), splice->remove
+		//pop, push, shift(), unshift()
+
+		nama2.splice(1, 0, "roziq");
+		document.getElementById('wrap3').innerHTML = nama2;
+
+		nama3.splice(2, 1);
+		document.getElementById('wrap4').innerHTML = nama3;
+
+		//pop() = menghapus nilai yang ada di akhir || mengambil nilai akhir ex. var nama = varArray.pop;
+		nama.pop(); //"tika" yg di hapus
+		//nama.push = menambahkan array di akhir
+		nama.push("maghfiroh");
+
+
+		//shift() = mengambil/menghapus nilai yang ada di awal
+		nama.shift();
+		//unshift() = menambahkan array di depan
+		nama.unshift("deknun");
+
+		document.getElementById('wrap5').innerHTML = nama;
+	</script>
+</body>
+</html>

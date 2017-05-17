@@ -1,0 +1,69 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<meta charset="utf-8">
+	<title>Children dan Parent pada JQuery</title>
+</head>
+<body>
+	<img src="logos.png">
+	<h1>Children dan Parent pada JQuery</h1>
+	
+	<div id="paling-atas">
+		<div>
+			Div pertama 
+		</div>
+
+		<div>
+			Div kedua
+			<ul>
+				<li>list paling pertama</li>	
+			</ul>
+
+			<ul>
+				<p>ini adalah teks paragraf pertama</p>
+				<li>list pertama</li>
+				<li id="css">list kedua</li>
+				<li>list ketiga</li>
+				<li>list ke empat</li>
+				<li>list kelima</li>
+				<li>list ke enam</li>
+				<div>
+					<p>ini adalah teks paragraf</p>
+					<span>ini adalah teks span dalam div</span>
+				</div>
+				<span>ini adalah teks span luar: didalam ul</span>
+			</ul>
+		</div>
+	</div>
+
+</body>
+<script src="jquery.min.js"></script>
+<script type="text/javascript">
+	$(document).ready(function(){
+
+		//--- children, find, parent, parents, parentsUntil()
+
+		//children => sifat dari metode ini, memilih semua elemen setelahnya
+		// $('ul').children().css('color', 'purple'); 
+		//teks span & p berubah karena div mengikuti anak turunan setelah ul
+		// $('ul').children('span').css('color', 'purple'); //--> Memilih satu anak dibawah ul
+
+		//find => seperti children, tapi pada find('param') memilih semua anaknya
+		// $('ul').find('span').css('color', 'purple'); 
+
+		//parent() => memilih satu diatasnya
+		//$('#css').parent().css('background', 'yellow');
+
+		//parents() => memilih semua parent yang ada di atasnya/semua pembungkusnya
+		// $('#css').parents().css('border', '2px solid yellow');
+		//jika diberi batas ---->
+		// $('#css').parents('ul').css('border', '2px solid yellow');
+
+		//parentsUntil => efeknya sama seperti nextUntil > tidak sampai mengenai yang dipilih
+		//Ex. 1-  $('#css').parentsUntil('div').css('border', '2px solid yellow');
+		//Ex. 2-
+		$('#css').parentsUntil('#paling-atas').css('border', '2px solid yellow');
+
+	});
+</script>
+</html>

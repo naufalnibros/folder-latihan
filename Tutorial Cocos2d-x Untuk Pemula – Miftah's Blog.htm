@@ -1,0 +1,736 @@
+<!DOCTYPE html>
+<html idmmzcc-ext-docid="338255872" lang="id-ID"><head>
+<meta http-equiv="content-type" content="text/html; charset=UTF-8">
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<link rel="profile" href="http://gmpg.org/xfn/11">
+<link rel="pingback" href="https://miftahdeveloper.wordpress.com/xmlrpc.php">
+
+<title>Tutorial Cocos2d-x Untuk Pemula – Miftah's Blog</title>
+<link rel="dns-prefetch" href="https://s2.wp.com/">
+<link rel="dns-prefetch" href="https://s0.wp.com/">
+<link rel="dns-prefetch" href="https://s1.wp.com/">
+<link rel="dns-prefetch" href="https://fonts.googleapis.com/">
+<link rel="alternate" type="application/rss+xml" title="Miftah's Blog » Feed" href="https://miftahdeveloper.wordpress.com/feed/">
+<link rel="alternate" type="application/rss+xml" title="Miftah's Blog » Umpan Komentar" href="https://miftahdeveloper.wordpress.com/comments/feed/">
+<link rel="alternate" type="application/rss+xml" title="Miftah's Blog » Tutorial Cocos2d-x Untuk&nbsp;Pemula Umpan Komentar" href="https://miftahdeveloper.wordpress.com/2016/11/07/tutorial-cocos2d-x-untuk-pemula/feed/">
+	<script async="" src="Tutorial%20Cocos2d-x%20Untuk%20Pemula%20%E2%80%93%20Miftah%27s%20Blog_files/beacon.js"></script><script type="text/javascript" src="Tutorial%20Cocos2d-x%20Untuk%20Pemula%20%E2%80%93%20Miftah%27s%20Blog_files/showad.js" async=""></script><script type="text/javascript">
+		/* <![CDATA[ */
+		function addLoadEvent(func) {
+			var oldonload = window.onload;
+			if (typeof window.onload != 'function') {
+				window.onload = func;
+			} else {
+				window.onload = function () {
+					oldonload();
+					func();
+				}
+			}
+		}
+		/* ]]> */
+	</script>
+			<script type="text/javascript">
+			window._wpemojiSettings = {"baseUrl":"https:\/\/s0.wp.com\/wp-content\/mu-plugins\/wpcom-smileys\/twemoji\/2\/72x72\/","ext":".png","svgUrl":"https:\/\/s0.wp.com\/wp-content\/mu-plugins\/wpcom-smileys\/twemoji\/2\/svg\/","svgExt":".svg","source":{"concatemoji":"https:\/\/s1.wp.com\/wp-includes\/js\/wp-emoji-release.min.js?m=1473172720h&ver=4.6.1-RC1-38499"}};
+			!function(a,b,c){function d(a){var c,d,e,f,g,h=b.createElement("canvas"),i=h.getContext&&h.getContext("2d"),j=String.fromCharCode;if(!i||!i.fillText)return!1;switch(i.textBaseline="top",i.font="600 32px Arial",a){case"flag":return i.fillText(j(55356,56806,55356,56826),0,0),!(h.toDataURL().length<3e3)&&(i.clearRect(0,0,h.width,h.height),i.fillText(j(55356,57331,65039,8205,55356,57096),0,0),c=h.toDataURL(),i.clearRect(0,0,h.width,h.height),i.fillText(j(55356,57331,55356,57096),0,0),d=h.toDataURL(),c!==d);case"diversity":return i.fillText(j(55356,57221),0,0),e=i.getImageData(16,16,1,1).data,f=e[0]+","+e[1]+","+e[2]+","+e[3],i.fillText(j(55356,57221,55356,57343),0,0),e=i.getImageData(16,16,1,1).data,g=e[0]+","+e[1]+","+e[2]+","+e[3],f!==g;case"simple":return i.fillText(j(55357,56835),0,0),0!==i.getImageData(16,16,1,1).data[0];case"unicode8":return i.fillText(j(55356,57135),0,0),0!==i.getImageData(16,16,1,1).data[0];case"unicode9":return i.fillText(j(55358,56631),0,0),0!==i.getImageData(16,16,1,1).data[0]}return!1}function e(a){var c=b.createElement("script");c.src=a,c.type="text/javascript",b.getElementsByTagName("head")[0].appendChild(c)}var f,g,h,i;for(i=Array("simple","flag","unicode8","diversity","unicode9"),c.supports={everything:!0,everythingExceptFlag:!0},h=0;h<i.length;h++)c.supports[i[h]]=d(i[h]),c.supports.everything=c.supports.everything&&c.supports[i[h]],"flag"!==i[h]&&(c.supports.everythingExceptFlag=c.supports.everythingExceptFlag&&c.supports[i[h]]);c.supports.everythingExceptFlag=c.supports.everythingExceptFlag&&!c.supports.flag,c.DOMReady=!1,c.readyCallback=function(){c.DOMReady=!0},c.supports.everything||(g=function(){c.readyCallback()},b.addEventListener?(b.addEventListener("DOMContentLoaded",g,!1),a.addEventListener("load",g,!1)):(a.attachEvent("onload",g),b.attachEvent("onreadystatechange",function(){"complete"===b.readyState&&c.readyCallback()})),f=c.source||{},f.concatemoji?e(f.concatemoji):f.wpemoji&&f.twemoji&&(e(f.twemoji),e(f.wpemoji)))}(window,document,window._wpemojiSettings);
+		</script><script src="Tutorial%20Cocos2d-x%20Untuk%20Pemula%20%E2%80%93%20Miftah%27s%20Blog_files/wp-emoji-release.js" type="text/javascript"></script>
+		<style type="text/css">
+img.wp-smiley,
+img.emoji {
+	display: inline !important;
+	border: none !important;
+	box-shadow: none !important;
+	height: 1em !important;
+	width: 1em !important;
+	margin: 0 .07em !important;
+	vertical-align: -0.1em !important;
+	background: none !important;
+	padding: 0 !important;
+}
+</style>
+<link rel="stylesheet" id="all-css-0-1" href="Tutorial%20Cocos2d-x%20Untuk%20Pemula%20%E2%80%93%20Miftah%27s%20Blog_files/a_002.css" type="text/css" media="all">
+<link rel="stylesheet" id="franklin-fonts-css" href="Tutorial%20Cocos2d-x%20Untuk%20Pemula%20%E2%80%93%20Miftah%27s%20Blog_files/css.css" type="text/css" media="all">
+<link rel="stylesheet" id="all-css-2-1" href="Tutorial%20Cocos2d-x%20Untuk%20Pemula%20%E2%80%93%20Miftah%27s%20Blog_files/a_003.css" type="text/css" media="all">
+<style id="franklin-style-inline-css" type="text/css">
+.post-tags { position: absolute; clip: rect(1px, 1px, 1px, 1px); }
+</style>
+<link rel="stylesheet" id="print-css-3-1" href="Tutorial%20Cocos2d-x%20Untuk%20Pemula%20%E2%80%93%20Miftah%27s%20Blog_files/global-print.css" type="text/css" media="print">
+<link rel="stylesheet" id="all-css-4-1" href="Tutorial%20Cocos2d-x%20Untuk%20Pemula%20%E2%80%93%20Miftah%27s%20Blog_files/a.css" type="text/css" media="all">
+<script type="text/javascript" src="Tutorial%20Cocos2d-x%20Untuk%20Pemula%20%E2%80%93%20Miftah%27s%20Blog_files/a_002.js"></script>
+<link rel="stylesheet" id="all-css-0-2" href="Tutorial%20Cocos2d-x%20Untuk%20Pemula%20%E2%80%93%20Miftah%27s%20Blog_files/style.css" type="text/css" media="all">
+<!--[if lt IE 8]>
+<link rel='stylesheet' id='highlander-comments-ie7-css'  href='https://s1.wp.com/wp-content/mu-plugins/highlander-comments/style-ie7.css?m=1351637563h&#038;ver=20110606' type='text/css' media='all' />
+<![endif]-->
+<link rel="EditURI" type="application/rsd+xml" title="RSD" href="https://miftahdeveloper.wordpress.com/xmlrpc.php?rsd">
+<link rel="wlwmanifest" type="application/wlwmanifest+xml" href="https://s1.wp.com/wp-includes/wlwmanifest.xml"> 
+<link rel="prev" title="Selamat Datang!" href="https://miftahdeveloper.wordpress.com/2016/11/07/selamat-datang/">
+<link rel="next" title="Tutorial Cocos2d-x Part-2 (Membuat Project&nbsp;Baru)" href="https://miftahdeveloper.wordpress.com/2016/11/09/tutorial-cocos2d-x-part-2-membuat-project-baru/">
+<meta name="generator" content="WordPress.com">
+<link rel="canonical" href="Tutorial%20Cocos2d-x%20Untuk%20Pemula%20%E2%80%93%20Miftah%27s%20Blog_files/a.htm">
+<link rel="shortlink" href="http://wp.me/p36tNW-15">
+<link rel="alternate" type="application/json+oembed" href="https://public-api.wordpress.com/oembed/1.0/?format=json&amp;url=https%3A%2F%2Fmiftahdeveloper.wordpress.com%2F2016%2F11%2F07%2Ftutorial-cocos2d-x-untuk-pemula%2F&amp;for=wpcom-auto-discovery"><link rel="alternate" type="application/xml+oembed" href="https://public-api.wordpress.com/oembed/1.0/?format=xml&amp;url=https%3A%2F%2Fmiftahdeveloper.wordpress.com%2F2016%2F11%2F07%2Ftutorial-cocos2d-x-untuk-pemula%2F&amp;for=wpcom-auto-discovery">
+<!-- Jetpack Open Graph Tags -->
+<meta property="og:type" content="article">
+<meta property="og:title" content="Tutorial Cocos2d-x Untuk Pemula">
+<meta property="og:url" content="https://miftahdeveloper.wordpress.com/2016/11/07/tutorial-cocos2d-x-untuk-pemula/">
+<meta property="og:description" content="Halo para pembaca, dalam post pertama ini, saya akan membahas tentang sebuah game engine untuk membuat suatu game. Game engine tersebut adalah Cocos2d-x. Mungkin para pembaca masih ada yang asing d…">
+<meta property="article:published_time" content="2016-11-07T22:29:52+00:00">
+<meta property="article:modified_time" content="2016-11-09T00:39:40+00:00">
+<meta property="og:site_name" content="Miftah's Blog">
+<meta property="og:image" content="https://miftahdeveloper.files.wordpress.com/2016/11/cocos.png">
+<meta property="og:image:width" content="1062">
+<meta property="og:image:height" content="721">
+<meta property="og:locale" content="id_ID">
+<meta name="twitter:site" content="@wordpressdotcom">
+<meta name="twitter:image:src" content="https://miftahdeveloper.files.wordpress.com/2016/11/cocos.png?w=640">
+<meta name="twitter:card" content="summary_large_image">
+<meta property="fb:app_id" content="249643311490">
+<meta property="article:publisher" content="https://www.facebook.com/WordPresscom">
+<link rel="shortcut icon" type="image/x-icon" href="https://secure.gravatar.com/blavatar/994d80dc25005193b672f1bad7c5d0cb?s=32" sizes="16x16">
+<link rel="icon" type="image/x-icon" href="https://secure.gravatar.com/blavatar/994d80dc25005193b672f1bad7c5d0cb?s=32" sizes="16x16">
+<link rel="apple-touch-icon-precomposed" href="https://secure.gravatar.com/blavatar/994d80dc25005193b672f1bad7c5d0cb?s=114">
+<link rel="openid.server" href="https://miftahdeveloper.wordpress.com/?openidserver=1">
+<link rel="openid.delegate" href="https://miftahdeveloper.wordpress.com/">
+<link rel="search" type="application/opensearchdescription+xml" href="https://miftahdeveloper.wordpress.com/osd.xml" title="Miftah's Blog">
+<link rel="search" type="application/opensearchdescription+xml" href="https://s1.wp.com/opensearch.xml" title="WordPress.com">
+		<style type="text/css">
+			.recentcomments a {
+				display: inline !important;
+				padding: 0 !important;
+				margin: 0 !important;
+			}
+
+			table.recentcommentsavatartop img.avatar, table.recentcommentsavatarend img.avatar {
+				border: 0px;
+				margin: 0;
+			}
+
+			table.recentcommentsavatartop a, table.recentcommentsavatarend a {
+				border: 0px !important;
+				background-color: transparent !important;
+			}
+
+			td.recentcommentsavatarend, td.recentcommentsavatartop {
+				padding: 0px 0px 1px 0px;
+				margin: 0px;
+			}
+
+			td.recentcommentstextend {
+				border: none !important;
+				padding: 0px 0px 2px 10px;
+			}
+
+			.rtl td.recentcommentstextend {
+				padding: 0px 10px 2px 0px;
+			}
+
+			td.recentcommentstexttop {
+				border: none;
+				padding: 0px 0px 0px 10px;
+			}
+
+			.rtl td.recentcommentstexttop {
+				padding: 0px 10px 0px 0px;
+			}
+		</style>
+		<meta name="application-name" content="Miftah's Blog"><meta name="msapplication-window" content="width=device-width;height=device-height"><meta name="msapplication-tooltip" content="Play the code and Write the game"><meta name="msapplication-task" content="name=Berlangganan;action-uri=https://miftahdeveloper.wordpress.com/feed/;icon-uri=https://secure.gravatar.com/blavatar/994d80dc25005193b672f1bad7c5d0cb?s=16"><meta name="msapplication-task" content="name=Mendaftar untuk blog gratis;action-uri=http://wordpress.com/signup/;icon-uri=https://s2.wp.com/i/favicon.ico"><meta name="msapplication-task" content="name=Dukungan WordPress.com;action-uri=http://support.wordpress.com/;icon-uri=https://s2.wp.com/i/favicon.ico"><meta name="msapplication-task" content="name=Forum WordPress.com;action-uri=http://forums.wordpress.com/;icon-uri=https://s2.wp.com/i/favicon.ico"><meta name="title" content="Tutorial Cocos2d-x Untuk&nbsp;Pemula | Miftah's Blog pada WordPress.com">
+<meta name="description" content="Halo para pembaca, dalam post pertama ini, saya akan membahas tentang sebuah game engine untuk membuat suatu game. Game engine tersebut adalah Cocos2d-x. Mungkin para pembaca masih ada yang asing dengan kata &quot;Game Engine&quot;. Game engine adalah sebuah software framework (kumpulan code) yang dipakai untuk mempermudah dalam proses pembuatan / pengembangan sebuah game. Karena tanpa…">
+		<script type="text/javascript" src="Tutorial%20Cocos2d-x%20Untuk%20Pemula%20%E2%80%93%20Miftah%27s%20Blog_files/amzn_ads.js"></script>
+		<script type="text/javascript">
+		try { amznads.getAds("3033"); } catch(e) { /* ignore */ }
+		</script><script type="text/javascript" src="Tutorial%20Cocos2d-x%20Untuk%20Pemula%20%E2%80%93%20Miftah%27s%20Blog_files/bid"></script>
+		<script type="text/javascript">
+		try {
+			var a9_p = amznads.getKeys(),
+			_ipw_custom = {
+				wordAds: '0',
+				adSafe: '0',
+				domain: 'miftahdeveloper.wordpress.com',
+				pageURL: 'https://miftahdeveloper.wordpress.com/2016/11/07/tutorial-cocos2d-x-untuk-pemula/'
+			};
+			if("undefined"!=typeof a9_p&&""!=a9_p&&null!==a9_p&&"[object Array]"===Object.prototype.toString.call(a9_p)){var a="",b=0,c=a9_p.length;a9_p.sort();for(var d=0;d<c;d++){a9_p[d-b]=a9_p[d-b].replace(/a1x6p/,"a160x600p");var e=a9_p[d-b].split("p");e[0]==a&&(a9_p.splice(d-b,1),b++);a=e[0]}_ipw_custom.amznPay=a9_p};document.close();
+		} catch(e) {}
+		</script> 		<script type="text/javascript" src="Tutorial%20Cocos2d-x%20Untuk%20Pemula%20%E2%80%93%20Miftah%27s%20Blog_files/publishertag.js"></script>
+ 		<script type="text/javascript" src="Tutorial%20Cocos2d-x%20Untuk%20Pemula%20%E2%80%93%20Miftah%27s%20Blog_files/head.js"></script>
+		<script type="text/javascript">
+		jQuery(window).ready(function () {
+			jQuery("a.wpa-about").text("Tentang iklan-iklan ini");
+		});
+		</script><link rel="amphtml" href="https://miftahdeveloper.wordpress.com/2016/11/07/tutorial-cocos2d-x-untuk-pemula/amp/"><style type="text/css" id="syntaxhighlighteranchor"></style>
+<script type="text/javascript">
+	window.google_analytics_uacct = "UA-52447-2";
+</script>
+
+<script type="text/javascript">
+	var _gaq = _gaq || [];
+	_gaq.push(['_setAccount', 'UA-52447-2']);
+	_gaq.push(['_setDomainName', 'wordpress.com']);
+	_gaq.push(['_initData']);
+	_gaq.push(['_trackPageview']);
+
+	(function() {
+		var ga = document.createElement('script'); ga.type = 'text/javascript'; ga.async = true;
+		ga.src = ('https:' == document.location.protocol ? 'https://ssl' : 'http://www') + '.google-analytics.com/ga.js';
+		(document.getElementsByTagName('head')[0] || document.getElementsByTagName('body')[0]).appendChild(ga);
+	})();
+</script><script type="text/javascript" async="" src="Tutorial%20Cocos2d-x%20Untuk%20Pemula%20%E2%80%93%20Miftah%27s%20Blog_files/ga.js"></script>
+<script type="text/javascript" async="" src="Tutorial%20Cocos2d-x%20Untuk%20Pemula%20%E2%80%93%20Miftah%27s%20Blog_files/a_002"></script><link rel="stylesheet" type="text/css" id="gravatar-card-css" href="Tutorial%20Cocos2d-x%20Untuk%20Pemula%20%E2%80%93%20Miftah%27s%20Blog_files/hovercard.css"><link rel="stylesheet" type="text/css" id="gravatar-card-services-css" href="Tutorial%20Cocos2d-x%20Untuk%20Pemula%20%E2%80%93%20Miftah%27s%20Blog_files/services.css"><script type="text/javascript" async="" src="Tutorial%20Cocos2d-x%20Untuk%20Pemula%20%E2%80%93%20Miftah%27s%20Blog_files/a"></script></head>
+
+<body class="single single-post postid-67 single-format-standard mp6 customizer-styles-applied tags-hidden highlander-enabled highlander-light desktop">
+<div id="page" class="hfeed site">
+	<a class="skip-link screen-reader-text" href="#content">Skip to content</a>
+	<header id="masthead" class="site-header" role="banner">
+
+		<div class="site-header-top">
+			<div class="inner">
+				<p class="site-description">Play the code and Write the game</p>
+
+				<form id="header-search" action="https://miftahdeveloper.wordpress.com/">
+					<input class="search-field" name="s" type="search">
+					<button type="submit" class="search-button">Cari</button>
+				</form><!-- #header-search -->
+
+				
+			</div><!-- .inner -->
+		</div><!-- .site-header-top -->
+
+		<div class="site-header-main">
+			<div class="inner">
+				<div class="site-branding">
+										<h1 class="site-title"><a href="https://miftahdeveloper.wordpress.com/" rel="home">Miftah's Blog</a></h1>
+				</div><!-- .site-branding -->
+
+								<nav id="site-navigation" class="main-navigation" role="navigation">
+					<button class="menu-toggle" aria-controls="primary-menu" aria-expanded="false" data-close-label="Tutup">Menu</button>
+					<ul id="primary-menu" class="menu nav-menu" aria-expanded="false"><li id="menu-item-566" class="menu-item menu-item-type-custom menu-item-object-custom menu-item-home menu-item-566"><a href="https://miftahdeveloper.wordpress.com/">Home</a></li>
+<li id="menu-item-567" class="menu-item menu-item-type-post_type menu-item-object-page menu-item-567"><a href="https://miftahdeveloper.wordpress.com/about/">About</a></li>
+</ul>				</nav><!-- #site-navigation -->
+							</div><!-- .inner -->
+		<nav id="mobile-navigation" class="main-navigation inner" role="navigation"><ul id="mobile-menu" class="menu"><li id="menu-item-566" class="menu-item menu-item-type-custom menu-item-object-custom menu-item-home menu-item-566"><a href="https://miftahdeveloper.wordpress.com/">Home</a></li>
+<li id="menu-item-567" class="menu-item menu-item-type-post_type menu-item-object-page menu-item-567"><a href="https://miftahdeveloper.wordpress.com/about/">About</a></li>
+</ul></nav></div><!-- .site-header-main -->
+	</header><!-- #masthead -->
+
+	<div id="content" class="site-content">
+	<div id="primary" class="content-area">
+		<main id="main" class="site-main" role="main">
+
+		
+			
+<article id="post-67" class="post-67 post type-post status-publish format-standard has-post-thumbnail hentry category-cocos2d-x tag-cocos2d-x tag-coding tag-game-development tag-install tag-tutorial">
+	<img src="Tutorial%20Cocos2d-x%20Untuk%20Pemula%20%E2%80%93%20Miftah%27s%20Blog_files/cocos_002.png" class="attachment-post-thumbnail size-post-thumbnail wp-post-image" alt="Tutorial Cocos2d-x Untuk&nbsp;Pemula" srcset="https://miftahdeveloper.files.wordpress.com/2016/11/cocos.png 1062w, https://miftahdeveloper.files.wordpress.com/2016/11/cocos.png?w=150&amp;h=102&amp;crop=1 150w, https://miftahdeveloper.files.wordpress.com/2016/11/cocos.png?w=300&amp;h=204&amp;crop=1 300w, https://miftahdeveloper.files.wordpress.com/2016/11/cocos.png?w=768&amp;h=521&amp;crop=1 768w, https://miftahdeveloper.files.wordpress.com/2016/11/cocos.png?w=1024&amp;h=695&amp;crop=1 1024w" sizes="(max-width: 1062px) 100vw, 1062px" width="1062" height="721">
+	<header class="entry-header">
+		<h1 class="entry-title">Tutorial Cocos2d-x Untuk&nbsp;Pemula</h1>	</header><!-- .entry-header -->
+
+	<div class="entry-content">
+		<p>Halo para pembaca, dalam post pertama ini, saya akan membahas 
+tentang sebuah game engine untuk membuat suatu game. Game engine 
+tersebut adalah Cocos2d-x.</p>
+<p>Mungkin para pembaca masih ada yang asing dengan kata <em>“Game Engine”. </em>Game
+ engine adalah sebuah software framework (kumpulan code) yang dipakai 
+untuk mempermudah dalam proses pembuatan / pengembangan sebuah game. 
+Karena tanpa adanya sebuah game engine, seorang <em>developer</em> (pengembang game) akan&nbsp;sangat kesulitan dalam proses pembuatan game.</p>
+<p>Game engine yang biasa dikenal oleh para game developer antara lain: 
+Unity, Construct2, GameMaker, XNA, Monogame, Cocos2d-x, dan lain 
+sebagainya. Untuk post kali ini kita akan membahas tentang Cocos2d-x.</p>
+<p>Cocos2d-x adalah sebuah game engine yang powerfull, mudah digunakan, 
+dan game engine 2D open source. Open source disini maksudnya setiap 
+orang dapat berkontribusi dalam pengembangan game engine ini. Dan tentu 
+saja cocos2d-x ini 100% gratis. Cocos2d-x ini juga banyak dipakai oleh 
+pengembang game ternama seperti Rovio, Bandai Namco, Square Enix, dan 
+banyak lagi yang lainnya.</p>
+<blockquote><p><strong>Catatan :&nbsp;</strong>Saya sarankan sebaiknya 
+anda sudah memahami dasar-dasar pemrograman yang baik, dan juga sudah 
+terbiasa menggunakan bahasa pemrograman C++</p></blockquote>
+<h2>Tahap&nbsp;Awal</h2>
+<p>Unduh versi terbaru dari <strong>Cocos2d-x</strong> di&nbsp;<a href="http://www.cocos2d-x.org/download" target="_blank">http://www.cocos2d-x.org/download</a></p>
+<p><img class="alignnone  wp-image-99" src="Tutorial%20Cocos2d-x%20Untuk%20Pemula%20%E2%80%93%20Miftah%27s%20Blog_files/cocos.png" alt="cocos" width="558" height="358"></p>
+<p>Taruh file yang telah diunduh tadi ke tempat yang kamu inginkan dan 
+ekstrak. Saya sarankan, sebaiknya taruh file .zip yang telah diunduh ke 
+tempat terluar dari sebuah drive.</p>
+<p>Unduh juga <strong>Android NDK</strong> (Native Development Kit) di&nbsp;<a href="https://developer.android.com/ndk/downloads/index.html" target="_blank">https://developer.android.com/ndk/downloads/index.html</a>,
+ dan jangan lupa pilih link unduhan yang sesuai dengan jenis komputermu.
+ Jika komputermu berbasis 64 bit, pilih yang&nbsp;Windows 64-bit, jika 
+32 bit pilih yang&nbsp;Windows 32-bit.</p>
+<p><img class="size-full wp-image-106 aligncenter" src="Tutorial%20Cocos2d-x%20Untuk%20Pemula%20%E2%80%93%20Miftah%27s%20Blog_files/ndk.png" alt="ndk" srcset="https://miftahdeveloper.files.wordpress.com/2016/11/ndk.png?w=1108 1108w, https://miftahdeveloper.files.wordpress.com/2016/11/ndk.png?w=150 150w, https://miftahdeveloper.files.wordpress.com/2016/11/ndk.png?w=300 300w, https://miftahdeveloper.files.wordpress.com/2016/11/ndk.png?w=768 768w, https://miftahdeveloper.files.wordpress.com/2016/11/ndk.png?w=1024 1024w, https://miftahdeveloper.files.wordpress.com/2016/11/ndk.png 1610w" sizes="(max-width: 1108px) 100vw, 1108px"></p>
+<p>Tujuan kita mengunduh android ndk ini adalah agar code-code kita 
+dalam bahasa C++ bisa diproses untuk dicompile pada platform android.</p>
+<p>Unduh juga <strong>Android SDK </strong>di&nbsp;<a href="http://android-sdk.en.softonic.com/" target="_blank">http://android-sdk.en.softonic.com/</a></p>
+<p>Unduh juga <strong>Apache Ant</strong> di&nbsp;<a href="http://ant.apache.org/bindownload.cgi" target="_blank">http://ant.apache.org/bindownload.cgi<br>
+</a></p>
+<p>Unduh juga <strong>Phyton </strong>di&nbsp;<a href="https://www.python.org/downloads/" target="_blank">https://www.python.org/downloads/</a></p>
+<p><img class="alignnone size-full wp-image-128" src="Tutorial%20Cocos2d-x%20Untuk%20Pemula%20%E2%80%93%20Miftah%27s%20Blog_files/phyton1.png" alt="phyton" srcset="https://miftahdeveloper.files.wordpress.com/2016/11/phyton1.png?w=1108 1108w, https://miftahdeveloper.files.wordpress.com/2016/11/phyton1.png?w=150 150w, https://miftahdeveloper.files.wordpress.com/2016/11/phyton1.png?w=300 300w, https://miftahdeveloper.files.wordpress.com/2016/11/phyton1.png?w=768 768w, https://miftahdeveloper.files.wordpress.com/2016/11/phyton1.png?w=1024 1024w, https://miftahdeveloper.files.wordpress.com/2016/11/phyton1.png 1188w" sizes="(max-width: 1108px) 100vw, 1108px"></p>
+<p>Jangan lupa, pilih phyton yang versi 2.x.x. Tujuan kita mengunduh 
+phyton ini adalah karena semua perintah console cocos2d-x dijalankan 
+menggunakan phyton.</p>
+<p>Setelah semua file yang diperlukan sudah diunduh, sekarang ekstrak 
+satu-persatu file-file yang sudah diunduh tadi. Saya sarankan taruh 
+file-file yang diunduh tadi dalam satu folder untuk memudahkan kita 
+ketika proses instalasi.</p>
+<p><img class="alignnone size-full wp-image-136" src="Tutorial%20Cocos2d-x%20Untuk%20Pemula%20%E2%80%93%20Miftah%27s%20Blog_files/extract.png" alt="extract" srcset="https://miftahdeveloper.files.wordpress.com/2016/11/extract.png?w=1108 1108w, https://miftahdeveloper.files.wordpress.com/2016/11/extract.png?w=150 150w, https://miftahdeveloper.files.wordpress.com/2016/11/extract.png?w=300 300w, https://miftahdeveloper.files.wordpress.com/2016/11/extract.png?w=768 768w, https://miftahdeveloper.files.wordpress.com/2016/11/extract.png?w=1024 1024w, https://miftahdeveloper.files.wordpress.com/2016/11/extract.png 1203w" sizes="(max-width: 1108px) 100vw, 1108px"></p>
+<p>Kemudian install phyton yang telah diunduh tadi.</p>
+<p>Setelah semua langkah tadi sudah dilakukan, langkah selanjutnya adalah proses menginstall cocos2d-x.</p>
+<ol>
+<li>Buka command prompt, lalu arahkan ke lokasi file cocos2d-x yang 
+telah diunduh tadi. Misalkan, lokasinya ada di E:\cocos2d-x-3.12, maka 
+ketikkan perintah di command prompt <img class="alignnone size-full wp-image-168" src="Tutorial%20Cocos2d-x%20Untuk%20Pemula%20%E2%80%93%20Miftah%27s%20Blog_files/cmd12.png" alt="cmd1" srcset="https://miftahdeveloper.files.wordpress.com/2016/11/cmd12.png 508w, https://miftahdeveloper.files.wordpress.com/2016/11/cmd12.png?w=150 150w, https://miftahdeveloper.files.wordpress.com/2016/11/cmd12.png?w=300 300w" sizes="(max-width: 508px) 100vw, 508px"></li>
+<li>Lalu ketikkan perintah <span class="skimlinks-unlinked">setup.py</span>.
+ Maka cocos2d-x akan secara otomatis mencatatkan dirinya ke dalam 
+Environment Variable. Kemudian akan muncul tampilan seperti di bawah 
+ini. Lalu, masukkan lokasi / path folder android ndk yang sudah diunduh 
+tadi.<img class="alignnone size-full wp-image-171" src="Tutorial%20Cocos2d-x%20Untuk%20Pemula%20%E2%80%93%20Miftah%27s%20Blog_files/cmd2.png" alt="cmd2" srcset="https://miftahdeveloper.files.wordpress.com/2016/11/cmd2.png 739w, https://miftahdeveloper.files.wordpress.com/2016/11/cmd2.png?w=150 150w, https://miftahdeveloper.files.wordpress.com/2016/11/cmd2.png?w=300 300w" sizes="(max-width: 739px) 100vw, 739px"></li>
+<li>Kemudian akan muncul tampilan di bawah ini, lalu masukkan juga lokasi / path folder android sdk.<img class="alignnone size-full wp-image-174" src="Tutorial%20Cocos2d-x%20Untuk%20Pemula%20%E2%80%93%20Miftah%27s%20Blog_files/cmd3.png" alt="cmd3" srcset="https://miftahdeveloper.files.wordpress.com/2016/11/cmd3.png 739w, https://miftahdeveloper.files.wordpress.com/2016/11/cmd3.png?w=150 150w, https://miftahdeveloper.files.wordpress.com/2016/11/cmd3.png?w=300 300w" sizes="(max-width: 739px) 100vw, 739px"></li>
+<li>Kemudian masukkan juga lokasi / path folder Apache Ant.</li>
+<li>Jika semua langkah diatas telah dilakukan, berarti cocos2d-x sudah 
+terinstall dengan baik. Untuk cara mengeceknya adalah ketikkan perintah 
+cocos di command prompt, jika tampilannya seperti ini, maka proses 
+instalasi telah berhasil.<img class="alignnone size-full wp-image-179" src="Tutorial%20Cocos2d-x%20Untuk%20Pemula%20%E2%80%93%20Miftah%27s%20Blog_files/cmd5.png" alt="cmd5" srcset="https://miftahdeveloper.files.wordpress.com/2016/11/cmd5.png 739w, https://miftahdeveloper.files.wordpress.com/2016/11/cmd5.png?w=150 150w, https://miftahdeveloper.files.wordpress.com/2016/11/cmd5.png?w=300 300w" sizes="(max-width: 739px) 100vw, 739px"></li>
+</ol>
+<p>Selamat! sekarang anda sudah bisa menggunakan game engine cocos2d-x 
+ini. Meskipun cara installnya cukup ruwet dan susah, tapi cocos2d-x ini 
+sangat powerfull untuk membuat game dua dimensi. Di postingan 
+selanjutnya, akan saya bahas cara memulai sebuah project game cocos2d-x 
+baru.</p>
+<p class="entry-title"><strong><a href="https://miftahdeveloper.wordpress.com/2016/11/09/tutorial-cocos2d-x-part-2-membuat-project-baru/">Tutorial Cocos2d-x Part-2 (Membuat Project&nbsp;Baru)</a></strong></p>
+<p>Jika para pembaca mengalami kesulitan dalam proses instalasi 
+cocos2d-x ini, pembaca bisa bertanya langsung / chat di akun facebook 
+saya.</p>
+		<div class="wpcnt">
+			<div class="wpa wpmrec" style="display: inline-block ! important;">
+				<a class="wpa-about" href="https://wordpress.com/about-these-ads/" rel="nofollow">Tentang iklan-iklan ini</a>
+				        <div id="crt-1150592803" style="width: 300px; height: 250px; display: none;"></div>
+        <script type="text/javascript">
+        var o = document.getElementById('crt-1150592803');
+        if ("undefined"!=typeof Criteo) {
+            var p = o.parentNode;
+            p.style.setProperty('display', 'inline-block', 'important');
+            o.style.setProperty('display', 'block', 'important');
+            Criteo.DisplayAcceptableAdIfAdblocked({zoneid:388248,containerid:"crt-1150592803",collapseContainerIfNotAdblocked:true});
+        } else {
+            o.style.setProperty('display', 'none', 'important');
+        }
+        </script>
+				<div class="u">
+					<script type="text/javascript">
+					(function(g){if("undefined"!=typeof g.__ATA){g.__ATA.initAd({sectionId:26942, width:300, height:250});}})(window);
+					</script><div id="automattic-id-5077" data-section="26942" style="width:300px; height:250px;"><iframe style="border:none;width:300px;height:250px;" scrolling="no" name="fif_slot_automattic-id-_automattic-id-5077" id="fif_slot_automattic-id-_automattic-id-5077" src="javascript:&quot;<html><body style='background:transparent;margin:0%;'></body></html>&quot;" width="300" height="250" frameborder="0"></iframe></div>
+				</div>
+			</div>
+		</div><div id="jp-post-flair" class="sharedaddy sd-like-enabled sd-sharing-enabled"><div class="sharedaddy sd-sharing-enabled"><div class="robots-nocontent sd-block sd-social sd-social-icon-text sd-sharing"><h3 class="sd-title">Share this:</h3><div class="sd-content"><ul><li class="share-twitter"><a rel="nofollow" data-shared="sharing-twitter-67" class="share-twitter sd-button share-icon" href="https://miftahdeveloper.wordpress.com/2016/11/07/tutorial-cocos2d-x-untuk-pemula/?share=twitter&amp;nb=1" target="_blank" title="Klik untuk berbagi pada Twitter"><span>Twitter</span></a></li><li class="share-facebook"><a rel="nofollow" data-shared="sharing-facebook-67" class="share-facebook sd-button share-icon" href="https://miftahdeveloper.wordpress.com/2016/11/07/tutorial-cocos2d-x-untuk-pemula/?share=facebook&amp;nb=1" target="_blank" title="Bagikan pada Facebook"><span>Facebook</span></a></li><li class="share-end"></li></ul></div></div></div><div class="sharedaddy sd-block sd-like jetpack-likes-widget-wrapper jetpack-likes-widget-loaded" id="like-post-wrapper-45873548-67-584d114f9d925" data-src="//widgets.wp.com/likes/#blog_id=45873548&amp;post_id=67&amp;origin=miftahdeveloper.wordpress.com&amp;obj_id=45873548-67-584d114f9d925" data-name="like-post-frame-45873548-67-584d114f9d925"><h3 class="sd-title">Sukai ini:</h3><div class="likes-widget-placeholder post-likes-widget-placeholder" style="height: 55px; display: none;"><span class="button"><span>Suka</span></span> <span class="loading">Memuat...</span></div><iframe class="post-likes-widget jetpack-likes-widget" name="like-post-frame-45873548-67-584d114f9d925" src="Tutorial%20Cocos2d-x%20Untuk%20Pemula%20%E2%80%93%20Miftah%27s%20Blog_files/a_002.htm" width="100%" height="55px" frameborder="0"></iframe><span class="sd-text-color"></span><a class="sd-link-color"></a></div></div>						<ul class="post-categories"><li><a href="https://miftahdeveloper.wordpress.com/category/cocos2d-x/" rel="category tag">Cocos2D-x</a></li></ul><!-- .post-categories -->	</div><!-- .entry-content -->
+
+	<footer class="entry-footer">
+		<ul class="post-meta"><li class="author vcard"><a class="url fn n" href="https://miftahdeveloper.wordpress.com/author/miftahdeveloper/">miftahdeveloper</a></li><li class="posted-on"><time class="entry-date published" datetime="2016-11-07T22:29:52+00:00">November 7, 2016</time><time class="updated" datetime="2016-11-09T00:39:40+00:00">November 9, 2016</time></li></ul><!-- .post-metadata -->			<div class="meta-wrapper">
+		<ul class="post-tags"><li><a href="https://miftahdeveloper.wordpress.com/tag/cocos2d-x/" rel="tag">Cocos2D-x</a></li><li><a href="https://miftahdeveloper.wordpress.com/tag/coding/" rel="tag">coding</a></li><li><a href="https://miftahdeveloper.wordpress.com/tag/game-development/" rel="tag">game development</a></li><li><a href="https://miftahdeveloper.wordpress.com/tag/install/" rel="tag">install</a></li><li><a href="https://miftahdeveloper.wordpress.com/tag/tutorial/" rel="tag">tutorial</a></li></ul><!-- .post-tags -->			</div><!-- .meta-wrapper -->
+			
+	<nav class="navigation post-navigation" role="navigation">
+		<h2 class="screen-reader-text">Navigasi pos</h2>
+		<div class="nav-links"><div class="nav-previous"><a href="https://miftahdeveloper.wordpress.com/2016/11/07/selamat-datang/" rel="prev"><span>Selamat Datang!</span></a></div><div class="nav-next"><a href="https://miftahdeveloper.wordpress.com/2016/11/09/tutorial-cocos2d-x-part-2-membuat-project-baru/" rel="next"><span>Tutorial Cocos2d-x Part-2 (Membuat Project&nbsp;Baru)</span></a></div></div>
+	</nav>	</footer><!-- .entry-footer -->
+</article><!-- #post-## -->
+			
+<div id="comments" class="comments-area">
+
+	
+			<h2 class="comments-title">
+			One thought on “<span>Tutorial Cocos2d-x Untuk&nbsp;Pemula</span>”		</h2><!-- .comments-title -->
+
+		
+		<ol class="comment-list">
+					<li id="comment-2" class="pingback even thread-even depth-1 highlander-comment">
+			<div class="comment-body">
+				Ping-balik: <a href="https://miftahdeveloper.wordpress.com/2016/11/09/tutorial-cocos2d-x-part-2-membuat-project-baru/" rel="external nofollow" class="url">Tutorial Cocos2d-x Part-2 (Membuat Project Baru) – Miftah's Personal Blog</a> 			</div>
+</li><!-- #comment-## -->
+		</ol><!-- .comment-list -->
+
+		
+	
+	
+					<div id="respond" class="comment-respond js">
+			<h3 id="reply-title" class="comment-reply-title">Tinggalkan Balasan <small><a rel="nofollow" id="cancel-comment-reply-link" href="https://miftahdeveloper.wordpress.com/2016/11/07/tutorial-cocos2d-x-untuk-pemula/#respond" style="display:none;">Batalkan balasan</a></small></h3>				<form action="https://miftahdeveloper.wordpress.com/wp-comments-post.php" method="post" id="commentform" class="comment-form" novalidate="">
+					<input id="highlander_comment_nonce" name="highlander_comment_nonce" value="90ed908161" type="hidden"><input name="_wp_http_referer" value="/2016/11/07/tutorial-cocos2d-x-untuk-pemula/" type="hidden">
+<input name="hc_post_as" id="hc_post_as" value="guest" type="hidden">
+
+<div class="comment-form-field comment-textarea">
+	
+	<div id="comment-form-comment"><textarea tabindex="-1" style="position: absolute; top: -999px; left: 0px; right: auto; bottom: auto; border: 0px none; padding: 0px; box-sizing: content-box; overflow-wrap: break-word; height: 0px ! important; min-height: 0px ! important; overflow: hidden; transition: none 0s ease 0s ; font-family: Arial,Helvetica,Tahoma,Verdana,sans-serif; font-size: 14px; font-weight: 400; font-style: normal; letter-spacing: 0px; text-transform: none; text-decoration: none; word-spacing: 0px; text-indent: 0px; line-height: 23.1px; width: 705.35px;" class="autosizejs ">Ketikkan komentar di sini...</textarea><textarea id="comment" name="comment" title="Ketikkan komentar di sini..." placeholder="Ketikkan komentar di sini..." style="height: 43px; overflow: hidden; overflow-wrap: break-word; resize: none;"></textarea></div>
+</div>
+
+<div id="comment-form-identity" style="display: none;">
+
+	<div id="comment-form-nascar">
+		<p>Isikan data di bawah atau klik salah satu ikon untuk log in:</p>
+		<ul>
+			<li class="selected" style="display:none;">
+				<a href="#comment-form-guest" id="postas-guest" title="Tamu">
+					<span></span>
+				</a>
+			</li>
+			<li>
+				<a href="#comment-form-load-service:WordPress.com" id="postas-wordpress" title="WordPress.com">
+					<span></span>
+				</a>
+			</li>
+			<li>
+				<a href="#comment-form-load-service:Twitter" id="postas-twitter" title="Twitter">
+					<span></span>
+				</a>
+			</li>
+			<li>
+				<a href="#comment-form-load-service:Facebook" id="postas-facebook" title="Facebook">
+					<span></span>
+				</a>
+			</li>
+			<li>
+			<iframe id="googleplus-sign-in" name="googleplus-sign-in" src="Tutorial%20Cocos2d-x%20Untuk%20Pemula%20%E2%80%93%20Miftah%27s%20Blog_files/a_003.htm" scrolling="no" allowtransparency="true" seamless="seamless" width="24" height="24" frameborder="0"></iframe>
+			</li>
+		</ul>
+	</div>
+
+	<div id="comment-form-guest" class="comment-form-service selected">
+		<div class="comment-form-padder">
+			<div class="comment-form-avatar">
+<a href="https://gravatar.com/site/signup/" target="_blank">				<img src="Tutorial%20Cocos2d-x%20Untuk%20Pemula%20%E2%80%93%20Miftah%27s%20Blog_files/ad516503a11cd5ca435acc9bb6523536.png" alt="Gravatar" class="no-grav" width="25">
+</a>			</div>
+
+				<div class="comment-form-fields">
+				<div class="comment-form-field comment-form-email">
+					<label for="email">Surel <span class="required">(wajib)</span> <span class="nopublish">(Alamat takkan pernah dipublikasikan)</span></label>
+					<div class="comment-form-input"><input id="email" name="email" type="email"></div>
+				</div>
+				<div class="comment-form-field comment-form-author">
+					<label for="author">Nama <span class="required">(wajib)</span></label>
+					<div class="comment-form-input"><input id="author" name="author" type="text"></div>
+				</div>
+				<div class="comment-form-field comment-form-url">
+					<label for="url">Situs Web</label>
+					<div class="comment-form-input"><input id="url" name="url" type="url"></div>
+				</div>
+			</div>
+	
+		</div>
+	</div>
+
+	<div id="comment-form-wordpress" class="comment-form-service">
+		<div class="comment-form-padder">
+			<div class="comment-form-avatar">
+				<img src="Tutorial%20Cocos2d-x%20Untuk%20Pemula%20%E2%80%93%20Miftah%27s%20Blog_files/ad516503a11cd5ca435acc9bb6523536.png" alt="Logo WordPress.com" class="no-grav" width="25">
+			</div>
+
+				<div class="comment-form-fields">
+				<input name="wp_avatar" id="wordpress-avatar" class="comment-meta-wordpress" value="" type="hidden">
+				<input name="wp_user_id" id="wordpress-user_id" class="comment-meta-wordpress" value="" type="hidden">
+				<input name="wp_access_token" id="wordpress-access_token" class="comment-meta-wordpress" value="" type="hidden">
+				<p class="comment-form-posting-as pa-wordpress"><strong></strong> You are commenting using your <span class="skimlinks-unlinked">WordPress.com</span> account. <span class="comment-form-log-out">(&nbsp;<a href="javascript:HighlanderComments.doExternalLogout(%20'wordpress'%20);">Logout</a>&nbsp;/&nbsp;<a href="#" onclick="javascript:HighlanderComments.switchAccount();return false;">Ubah</a>&nbsp;)</span></p>
+			</div>
+	
+		</div>
+	</div>
+
+	<div id="comment-form-twitter" class="comment-form-service">
+		<div class="comment-form-padder">
+			<div class="comment-form-avatar">
+				<img src="Tutorial%20Cocos2d-x%20Untuk%20Pemula%20%E2%80%93%20Miftah%27s%20Blog_files/ad516503a11cd5ca435acc9bb6523536.png" alt="Gambar Twitter" class="no-grav" width="25">
+			</div>
+
+				<div class="comment-form-fields">
+				<input name="twitter_avatar" id="twitter-avatar" class="comment-meta-twitter" value="" type="hidden">
+				<input name="twitter_user_id" id="twitter-user_id" class="comment-meta-twitter" value="" type="hidden">
+				<input name="twitter_access_token" id="twitter-access_token" class="comment-meta-twitter" value="" type="hidden">
+				<p class="comment-form-posting-as pa-twitter"><strong></strong> You are commenting using your Twitter account. <span class="comment-form-log-out">(&nbsp;<a href="javascript:HighlanderComments.doExternalLogout(%20'twitter'%20);">Logout</a>&nbsp;/&nbsp;<a href="#" onclick="javascript:HighlanderComments.switchAccount();return false;">Ubah</a>&nbsp;)</span></p>
+			</div>
+	
+		</div>
+	</div>
+
+	<div id="comment-form-facebook" class="comment-form-service">
+		<div class="comment-form-padder">
+			<div class="comment-form-avatar">
+				<img src="Tutorial%20Cocos2d-x%20Untuk%20Pemula%20%E2%80%93%20Miftah%27s%20Blog_files/ad516503a11cd5ca435acc9bb6523536.png" alt="Foto Facebook" class="no-grav" width="25">
+			</div>
+
+				<div class="comment-form-fields">
+				<input name="fb_avatar" id="facebook-avatar" class="comment-meta-facebook" value="" type="hidden">
+				<input name="fb_user_id" id="facebook-user_id" class="comment-meta-facebook" value="" type="hidden">
+				<input name="fb_access_token" id="facebook-access_token" class="comment-meta-facebook" value="" type="hidden">
+				<p class="comment-form-posting-as pa-facebook"><strong></strong> You are commenting using your Facebook account. <span class="comment-form-log-out">(&nbsp;<a href="javascript:HighlanderComments.doExternalLogout(%20'facebook'%20);">Logout</a>&nbsp;/&nbsp;<a href="#" onclick="javascript:HighlanderComments.switchAccount();return false;">Ubah</a>&nbsp;)</span></p>
+			</div>
+	
+		</div>
+	</div>
+
+	<div id="comment-form-googleplus" class="comment-form-service">
+		<div class="comment-form-padder">
+			<div class="comment-form-avatar">
+				<img src="Tutorial%20Cocos2d-x%20Untuk%20Pemula%20%E2%80%93%20Miftah%27s%20Blog_files/ad516503a11cd5ca435acc9bb6523536.png" alt="Foto Google+" class="no-grav" width="25">
+			</div>
+
+				<div class="comment-form-fields">
+				<input name="googleplus_avatar" id="googleplus-avatar" class="comment-meta-googleplus" value="" type="hidden">
+				<input name="googleplus_user_id" id="googleplus-user_id" class="comment-meta-googleplus" value="" type="hidden">
+				<input name="googleplus_access_token" id="googleplus-access_token" class="comment-meta-googleplus" value="" type="hidden">
+				<p class="comment-form-posting-as pa-googleplus"><strong></strong> You are commenting using your Google+ account. <span class="comment-form-log-out">(&nbsp;<a href="javascript:HighlanderComments.doExternalLogout(%20'googleplus'%20);">Logout</a>&nbsp;/&nbsp;<a href="#" onclick="javascript:HighlanderComments.switchAccount();return false;">Ubah</a>&nbsp;)</span></p>
+			</div>
+	
+		</div>
+	</div>
+
+
+	<div id="comment-form-load-service" class="comment-form-service">
+		<div class="comment-form-posting-as-cancel"><a href="javascript:HighlanderComments.cancelExternalWindow();">Batal</a></div>
+		<p>Connecting to %s</p>
+	</div>
+
+</div>
+
+<script type="text/javascript">
+var highlander_expando_javascript = function(){
+	var input = document.createElement( 'input' ),
+	    comment = jQuery( '#comment' );
+
+	if ( 'placeholder' in input ) {
+		comment.attr( 'placeholder', jQuery( '.comment-textarea label' ).remove().text() );
+	}
+
+	// Expando Mode: start small, then auto-resize on first click + text length
+	jQuery( '#comment-form-identity' ).hide();
+	jQuery( '#comment-form-subscribe' ).hide();
+	jQuery( '#commentform .form-submit' ).hide();
+
+	comment.css( { 'height':'10px' } ).one( 'focus', function() {
+		var timer = setInterval( HighlanderComments.resizeCallback, 10 )
+		jQuery( this ).animate( { 'height': HighlanderComments.initialHeight } ).delay( 100 ).queue( function(n) { clearInterval( timer ); HighlanderComments.resizeCallback(); n(); } );
+		jQuery( '#comment-form-identity' ).slideDown();
+		jQuery( '#comment-form-subscribe' ).slideDown();
+		jQuery( '#commentform .form-submit' ).slideDown();
+	});
+}
+jQuery(document).ready( highlander_expando_javascript );
+</script>
+
+<div id="comment-form-subscribe" style="display: none;">
+	<p class="comment-subscription-form"><input name="subscribe" id="subscribe" value="subscribe" style="width: auto;" type="checkbox"> <label class="subscribe-label" id="subscribe-label" for="subscribe" style="display: inline;">Beri tahu saya komentar baru melalui email.</label></p></div>
+
+
+
+
+<p class="form-submit" style="display: none;"><input name="submit" id="comment-submit" class="submit" value="Kirim Komentar" type="submit"> <input name="comment_post_ID" value="67" id="comment_post_ID" type="hidden">
+<input name="comment_parent" id="comment_parent" value="0" type="hidden">
+</p><p style="display: none;"><input id="akismet_comment_nonce" name="akismet_comment_nonce" value="82149cfc60" type="hidden"></p>
+<input name="genseq" value="1481445711" type="hidden">
+<p style="display: none;"></p>				<input id="ak_js" name="ak_js" value="1481445718423" type="hidden"></form>
+					</div><!-- #respond -->
+		<div style="clear: both"></div>
+</div><!-- #comments -->
+		
+		</main><!-- #main -->
+	</div><!-- #primary -->
+
+
+<div id="secondary" class="widget-area" role="complementary">
+	<aside id="calendar-5" class="widget widget_calendar"><div id="calendar_wrap" class="calendar_wrap"><table id="wp-calendar">
+	<caption>November 2016</caption>
+	<thead>
+	<tr>
+		<th scope="col" title="Senin">S</th>
+		<th scope="col" title="Selasa">S</th>
+		<th scope="col" title="Rabu">R</th>
+		<th scope="col" title="Kamis">K</th>
+		<th scope="col" title="Jumat">J</th>
+		<th scope="col" title="Sabtu">S</th>
+		<th scope="col" title="Minggu">M</th>
+	</tr>
+	</thead>
+
+	<tfoot>
+	<tr>
+		<td colspan="3" id="prev" class="pad">&nbsp;</td>
+		<td class="pad">&nbsp;</td>
+		<td colspan="3" id="next" class="pad">&nbsp;</td>
+	</tr>
+	</tfoot>
+
+	<tbody>
+	<tr>
+		<td colspan="1" class="pad">&nbsp;</td><td>1</td><td>2</td><td>3</td><td>4</td><td>5</td><td>6</td>
+	</tr>
+	<tr>
+		<td><a href="https://miftahdeveloper.wordpress.com/2016/11/07/" aria-label="Pos diterbitkan pada November 7, 2016">7</a></td><td>8</td><td><a href="https://miftahdeveloper.wordpress.com/2016/11/09/" aria-label="Pos diterbitkan pada November 9, 2016">9</a></td><td>10</td><td>11</td><td>12</td><td>13</td>
+	</tr>
+	<tr>
+		<td>14</td><td>15</td><td>16</td><td><a href="https://miftahdeveloper.wordpress.com/2016/11/17/" aria-label="Pos diterbitkan pada November 17, 2016">17</a></td><td>18</td><td>19</td><td>20</td>
+	</tr>
+	<tr>
+		<td>21</td><td>22</td><td>23</td><td>24</td><td>25</td><td>26</td><td>27</td>
+	</tr>
+	<tr>
+		<td>28</td><td>29</td><td>30</td>
+		<td class="pad" colspan="4">&nbsp;</td>
+	</tr>
+	</tbody>
+	</table></div></aside></div><!-- #secondary -->
+	</div><!-- #content -->
+
+	<footer id="colophon" class="site-footer" role="contentinfo">
+		
+		<div class="site-footer-bottom">
+			<div class="inner">
+
+				
+				<div class="site-info">
+					<a href="https://wordpress.com/?ref=footer_website">Buat situs web atau blog gratis di WordPress.com.</a>
+					
+									</div><!-- .site-info -->
+
+			</div><!-- .inner -->
+		</div><!-- .site-footer-bottom -->
+	</footer><!-- #colophon -->
+</div><!-- #page -->
+
+<!--  -->
+<script type="text/javascript" src="Tutorial%20Cocos2d-x%20Untuk%20Pemula%20%E2%80%93%20Miftah%27s%20Blog_files/gprofiles.js"></script>
+<script type="text/javascript">
+/* <![CDATA[ */
+var WPGroHo = {"my_hash":""};
+/* ]]> */
+</script>
+<script type="text/javascript" src="Tutorial%20Cocos2d-x%20Untuk%20Pemula%20%E2%80%93%20Miftah%27s%20Blog_files/wpgroho.js"></script>
+
+	<script>
+		//initialize and attach hovercards to all gravatars
+		jQuery( document ).ready( function( $ ) {
+
+			if (typeof Gravatar === "undefined"){
+				return;
+			}
+
+			if ( typeof Gravatar.init !== "function" ) {
+				return;
+			}			
+
+			Gravatar.profile_cb = function( hash, id ) {
+				WPGroHo.syncProfileData( hash, id );
+			};
+			Gravatar.my_hash = WPGroHo.my_hash;
+			Gravatar.init( 'body', '#wp-admin-bar-my-account' );
+		});
+	</script>
+
+		<div style="display:none">
+	</div>
+<script type="text/javascript">
+/* <![CDATA[ */
+var HighlanderComments = {"loggingInText":"Logging In\u2026","submittingText":"Memposkan Komentar\u2026","postCommentText":"Kirim Komentar","connectingToText":"Connecting to %s","commentingAsText":"%1$s: You are commenting using your %2$s account.","logoutText":"Log Keluar","loginText":"Log Masuk","connectURL":"https:\/\/miftahdeveloper.wordpress.com\/public.api\/connect\/?action=request","logoutURL":"https:\/\/miftahdeveloper.wordpress.com\/wp-login.php?action=logout&_wpnonce=d41e9d4984","homeURL":"https:\/\/miftahdeveloper.wordpress.com\/","postID":"67","gravDefault":"identicon","enterACommentError":"Silakan masukkan komentar","enterEmailError":"Masukkan alamat email di sini","invalidEmailError":"Alamat email tidak valid","enterAuthorError":"Masukkan nama Anda di sini","gravatarFromEmail":"Gambar ini akan tampil ketika Anda memberi komentar. Klik untuk mengubahnya.","logInToExternalAccount":"Log in untuk memakai data dari salah satu akun ini.","change":"Ubah","changeAccount":"Ubah Akun","comment_registration":"0","userIsLoggedIn":"","isJetpack":"0","text_direction":"ltr"};
+/* ]]> */
+</script>
+<script type="text/javascript" src="Tutorial%20Cocos2d-x%20Untuk%20Pemula%20%E2%80%93%20Miftah%27s%20Blog_files/a_003.js"></script>
+
+	<script type="text/javascript">
+		window.WPCOM_sharing_counts = {"https:\/\/miftahdeveloper.wordpress.com\/2016\/11\/07\/tutorial-cocos2d-x-untuk-pemula\/":67};
+	</script>
+		<script type="text/javascript">
+			var windowOpen;
+		jQuery(document).on( 'ready post-load', function(){
+			jQuery( 'a.share-twitter' ).on( 'click', function() {
+				if ( 'undefined' !== typeof windowOpen ){ // If there's another sharing window open, close it.
+					windowOpen.close();
+				}
+				windowOpen = window.open( jQuery(this).attr( 'href' ), 'wpcomtwitter', 'menubar=1,resizable=1,width=600,height=350' );
+				return false;
+			});
+		});
+		</script>
+				<script type="text/javascript">
+			var windowOpen;
+		jQuery(document).on( 'ready post-load', function(){
+			jQuery( 'a.share-facebook' ).on( 'click', function() {
+				if ( 'undefined' !== typeof windowOpen ){ // If there's another sharing window open, close it.
+					windowOpen.close();
+				}
+				windowOpen = window.open( jQuery(this).attr( 'href' ), 'wpcomfacebook', 'menubar=1,resizable=1,width=600,height=400' );
+				return false;
+			});
+		});
+		</script>
+		<script type="text/javascript" src="Tutorial%20Cocos2d-x%20Untuk%20Pemula%20%E2%80%93%20Miftah%27s%20Blog_files/form.js"></script>
+<script type="text/javascript">
+/* <![CDATA[ */
+var actionbardata = {"siteID":"45873548","siteName":"Miftah's Blog","siteURL":"http:\/\/miftahdeveloper.wordpress.com","icon":"<img alt='' src='https:\/\/secure.gravatar.com\/blavatar\/994d80dc25005193b672f1bad7c5d0cb?s=36' class='avatar avatar-36' height='36' width='36' \/>","canManageOptions":"","canCustomizeSite":"","isFollowing":"","themeSlug":"pub\/franklin","signupURL":"https:\/\/wordpress.com\/start\/","loginURL":"https:\/\/miftahdeveloper.wordpress.com\/wp-login.php?redirect_to=https%3A%2F%2Fmiftahdeveloper.wordpress.com%2F2016%2F11%2F07%2Ftutorial-cocos2d-x-untuk-pemula%2F","themeURL":"https:\/\/wordpress.com\/themes\/franklin\/","xhrURL":"https:\/\/miftahdeveloper.wordpress.com\/wp-admin\/admin-ajax.php","nonce":"166f158fa9","isSingular":"1","isFolded":"","isLoggedIn":"","isMobile":"","subscribeNonce":"<input type=\"hidden\" id=\"_wpnonce\" name=\"_wpnonce\" value=\"0d08e79aa8\" \/>","referer":"https:\/\/miftahdeveloper.wordpress.com\/2016\/11\/07\/tutorial-cocos2d-x-untuk-pemula\/","canFollow":"1","statusMessage":"","customizeLink":"https:\/\/miftahdeveloper.wordpress.com\/wp-admin\/customize.php?url=https%3A%2F%2Fmiftahdeveloper.wordpress.com%2F2016%2F11%2F07%2Ftutorial-cocos2d-x-untuk-pemula%2F","postID":"67","shortlink":"http:\/\/wp.me\/p36tNW-15","canEditPost":"","editLink":"https:\/\/wordpress.com\/post\/miftahdeveloper.wordpress.com\/67","i18n":{"view":"Lihat Situs","follow":"Ikuti","following":"Mengikuti","edit":"Sunting","login":"Log Masuk","signup":"Mendaftar","customize":"Sesuaikan","report":"Laporkan isi ini","themeInfo":"Dapatkan tema: Franklin","shortlink":"Salin shortlink","copied":"Tersalin","followedText":"Pos baru dari situs ini sekarang akan ditampilkan di <a href=\"https:\/\/wordpress.com\/\">Pembaca<\/a> Anda","foldBar":"Ciutkan bilah ini","unfoldBar":"Perluas bilah ini","editFollows":"Kelola Situs yang Saya Ikuti","editSubs":"Kelola Langganan","viewReader":"Lihat Situs dalam Pembaca","subscribe":"Daftarkan saya","enterEmail":"Masukkan alamat email Anda","followers":"Bergabunglah dengan 1.982 pengikut lainnya","alreadyUser":"Sudah punya akun WordPress.com? <a href=\"https:\/\/miftahdeveloper.wordpress.com\/wp-login.php?redirect_to=https%3A%2F%2Fmiftahdeveloper.wordpress.com%2F2016%2F11%2F07%2Ftutorial-cocos2d-x-untuk-pemula%2F\">Login sekarang.<\/a>"}};
+/* ]]> */
+</script>
+<script type="text/javascript">
+/* <![CDATA[ */
+var sharing_js_options = {"lang":"en","counts":"1"};
+/* ]]> */
+</script>
+<script type="text/javascript" src="Tutorial%20Cocos2d-x%20Untuk%20Pemula%20%E2%80%93%20Miftah%27s%20Blog_files/a.js"></script><div id="actionbar" class="actnbr-pub-franklin actnbr-has-follow actnbr-hidden"><ul><li class="actnbr-btn actnbr-hidden"> 			    	<a class="actnbr-action actnbr-actn-follow" href=""><svg class="gridicon gridicon__follow" height="24px" width="24px" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24"><g><path d="M23 16v2h-3v3h-2v-3h-3v-2h3v-3h2v3h3zM20 2v9h-4v3h-3v4H4c-1.1 0-2-.9-2-2V2h18zM8 13v-1H4v1h4zm3-3H4v1h7v-1zm0-2H4v1h7V8zm7-4H4v2h14V4z"></path></g></svg><span>Ikuti</span></a> 			    	<div class="actnbr-popover tip tip-top-left actnbr-notice"> 			    		<div class="tip-arrow"></div> 			    		<div class="tip-inner actnbr-follow-bubble"></div> 			    	</div> 			    </li><li class="actnbr-ellipsis actnbr-hidden"> 			  <svg class="gridicon gridicon__ellipsis" height="24" width="24" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24"><g><circle cx="5" cy="12" r="2"></circle><circle cx="19" cy="12" r="2"></circle><circle cx="12" cy="12" r="2"></circle></g></svg> 			  <div class="actnbr-popover tip tip-top-left actnbr-more"> 			  	<div class="tip-arrow"></div> 			  	<div class="tip-inner"> 				  <ul> 				    <li class="actnbr-sitename actnbr-hidden"><a href="http://miftahdeveloper.wordpress.com/"><img alt="" src="Tutorial%20Cocos2d-x%20Untuk%20Pemula%20%E2%80%93%20Miftah%27s%20Blog_files/994d80dc25005193b672f1bad7c5d0cb.jpg" class="avatar avatar-36" width="36" height="36"> Miftah's Blog</a></li> 				   	<li class="actnbr-folded-customize actnbr-hidden"><a href="https://miftahdeveloper.wordpress.com/wp-admin/customize.php?url=https%3A%2F%2Fmiftahdeveloper.wordpress.com%2F2016%2F11%2F07%2Ftutorial-cocos2d-x-untuk-pemula%2F"><svg class="gridicon gridicon__customize" height="20px" width="20px" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24"><g><path d="M2 6c0-1.505.78-3.08 2-4 0 .845.69 2 2 2 1.657 0 3 1.343 3 3 0 .386-.08.752-.212 1.09.74.594 1.476 1.19 2.19 1.81L8.9 11.98c-.62-.716-1.214-1.454-1.807-2.192C6.753 9.92 6.387 10 6 10c-2.21 0-4-1.79-4-4zm12.152 6.848l1.34-1.34c.607.304 1.283.492 2.008.492 2.485 0 4.5-2.015 4.5-4.5 0-.725-.188-1.4-.493-2.007L18 9l-2-2 3.507-3.507C18.9 3.188 18.225 3 17.5 3 15.015 3 13 5.015 13 7.5c0 .725.188 1.4.493 2.007L3 20l2 2 6.848-6.848c1.885 1.928 3.874 3.753 5.977 5.45l1.425 1.148 1.5-1.5-1.15-1.425c-1.695-2.103-3.52-4.092-5.448-5.977z" data-reactid=".2.1.1:0.1b.0"></path></g></svg><span>Sesuaikan<span></span></span></a></li> 				    <li class="actnbr-folded-follow actnbr-hidden"><a class="actnbr-action actnbr-actn-follow" href=""><svg class="gridicon gridicon__follow" height="24px" width="24px" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24"><g><path d="M23 16v2h-3v3h-2v-3h-3v-2h3v-3h2v3h3zM20 2v9h-4v3h-3v4H4c-1.1 0-2-.9-2-2V2h18zM8 13v-1H4v1h4zm3-3H4v1h7v-1zm0-2H4v1h7V8zm7-4H4v2h14V4z"></path></g></svg><span>Ikuti</span></a></li> 						<li class="actnbr-signup actnbr-hidden"><a href="https://wordpress.com/start/">Mendaftar</a></li> 				    <li class="actnbr-login actnbr-hidden"><a href="https://miftahdeveloper.wordpress.com/wp-login.php?redirect_to=https%3A%2F%2Fmiftahdeveloper.wordpress.com%2F2016%2F11%2F07%2Ftutorial-cocos2d-x-untuk-pemula%2F">Log Masuk</a></li> 				     				    <li class="actnbr-shortlink actnbr-hidden"><a href="http://wp.me/p36tNW-15">Salin shortlink</a></li> 				     				     				     				    <li class="actnbr-subs actnbr-hidden"><a href="https://subscribe.wordpress.com/">Kelola Langganan</a></li> 				    <li class="actnbr-fold actnbr-hidden"><a href="">Ciutkan bilah ini</a></li> 			      </ul> 			    </div> 		      </div> 		    </li> 	      </ul></div>
+<script type="text/javascript">
+// <![CDATA[
+(function() {
+try{
+  if ( window.external &&'msIsSiteMode' in window.external) {
+    if (window.external.msIsSiteMode()) {
+      var jl = document.createElement('script');
+      jl.type='text/javascript';
+      jl.async=true;
+      jl.src='/wp-content/plugins/ie-sitemode/custom-jumplist.php';
+      var s = document.getElementsByTagName('script')[0];
+      s.parentNode.insertBefore(jl, s);
+    }
+  }
+}catch(e){}
+})();
+// ]]>
+</script>	<script type="text/javascript">
+	var skimlinks_pub_id = "725X584219"
+	var skimlinks_sitename = "miftahdeveloper.wordpress.com";
+	</script>
+	<script type="text/javascript" src="Tutorial%20Cocos2d-x%20Untuk%20Pemula%20%E2%80%93%20Miftah%27s%20Blog_files/725X1342.js"></script>		<iframe src="Tutorial%20Cocos2d-x%20Untuk%20Pemula%20%E2%80%93%20Miftah%27s%20Blog_files/master.htm" scrolling="no" id="likes-master" name="likes-master" style="display:none;"></iframe>
+		<div id="likes-other-gravatars"><div class="likes-text"><span>%d</span> blogger menyukai ini:</div><ul class="wpl-avatars sd-like-gravatars"></ul></div>
+		<script>
+			var _comscore = _comscore || [];
+			_comscore.push({
+				c1: "2",
+				c2: "7518284"
+			});
+			(function() {
+				var s = document.createElement("script"),
+					el = document.getElementsByTagName("script")[0];
+				s.async = true;
+				s.src = (document.location.protocol == "https:" ? "https://sb" : "http://b") + ".scorecardresearch.com/beacon.js";
+				el.parentNode.insertBefore(s, el);
+			})();
+		</script>
+		<noscript>
+			<p class="robots-nocontent"><img src="https://sb.scorecardresearch.com/p?c1=2&c2=7518284&c3=&c4=&c5=&c6=&c15=&cv=2.0&cj=1" alt="" style="display:none;" width="1" height="1" /></p>
+		</noscript><script src="Tutorial%20Cocos2d-x%20Untuk%20Pemula%20%E2%80%93%20Miftah%27s%20Blog_files/w.js" type="text/javascript" async="" defer="defer"></script>
+<script type="text/javascript">
+_tkq = window._tkq || [];
+_stq = window._stq || [];
+_tkq.push(['storeContext', {'blog_id':'45873548','blog_tz':'0','user_lang':'id','blog_lang':'id','user_id':'0'}]);
+_stq.push(['view', {'blog':'45873548','v':'wpcom','tz':'0','user_id':'0','post':'67','subd':'miftahdeveloper'}]);
+_stq.push(['extra', {'crypt':'UE5XaGUuOTlwaD85flAmcm1mcmZsaDhkV11YdTdvUG14Q2VDQTR4LlUsLi82dU1mai9BMlJJWUJnN2NVaVRYdXFDKyxoSzNbT0wuZGRvZW1nZzhBdDVib29ERFJDfFFdLEtHYW5faHlQZ34lUlZ0PXZUJixRMGJ5ViVjfEY9JU9uJktMMWY9dT96JTZqSXRbTUs1NEI/dWJkZVNpW29MdmhHOEJPRj9FPTJDczNFT2smR29sKy9EUT03RysySExkbnlNWS9VeixjaFhjQy5vcElWYl9YTUZBalBMY1JiazB1byVzVVRlb3ZaNkJMeXwzOVVzaF1FN3BmLj1TTENwc181Wg=='}]);
+_stq.push([ 'clickTrackerInit', '45873548', '67' ]);
+	</script>
+<noscript><img src="https://pixel.wp.com/b.gif?v=noscript" style="height:0px;width:0px;overflow:hidden" alt="" /></noscript>
+<script>
+if ( 'object' === typeof wpcom_mobile_user_agent_info ) {
+
+	wpcom_mobile_user_agent_info.init();
+	var mobileStatsQueryString = "";
+	
+	if( false !== wpcom_mobile_user_agent_info.matchedPlatformName )
+		mobileStatsQueryString += "&x_" + 'mobile_platforms' + '=' + wpcom_mobile_user_agent_info.matchedPlatformName;
+	
+	if( false !== wpcom_mobile_user_agent_info.matchedUserAgentName )
+		mobileStatsQueryString += "&x_" + 'mobile_devices' + '=' + wpcom_mobile_user_agent_info.matchedUserAgentName;
+	
+	if( wpcom_mobile_user_agent_info.isIPad() )
+		mobileStatsQueryString += "&x_" + 'ipad_views' + '=' + 'views';
+
+	if( "" != mobileStatsQueryString ) {
+		new Image().src = document.location.protocol + '//pixel.wp.com/g.gif?v=wpcom-no-pv' + mobileStatsQueryString + '&baba=' + Math.random();
+	}
+	
+}
+</script>
+
+<img src="Tutorial%20Cocos2d-x%20Untuk%20Pemula%20%E2%80%93%20Miftah%27s%20Blog_files/g.gif" alt=":)" id="wpstats"><iframe style="position: absolute; left: -1000px; top: -1000px; border: 0px solid; width: 0px; height: 0px;" name="automattic-passback-receiver" src="Tutorial%20Cocos2d-x%20Untuk%20Pemula%20%E2%80%93%20Miftah%27s%20Blog_files/passback.htm" width="0" height="0"></iframe></body></html>

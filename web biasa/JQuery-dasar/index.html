@@ -1,0 +1,172 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<meta charset="utf-8">
+	<title>Belajar JQuery</title>
+</head>
+<style type="text/css">
+	#box_wrap{
+		background: aqua;
+		height: 100px;
+		width: 100px;
+	}
+	#boxe_wrap{
+		background: grey;
+		height: 100px;
+		width: 100px;
+	}
+	#boxes_wrap{
+		background: aqua;
+		width: 200px;
+		height: 200px;
+		padding: 10px;
+		border: 5px solid black;
+		margin: 10px;
+	}
+	#boxe_wrap{
+		height: 150px;
+		width: 150px;
+		border: 5px solid black;
+	}
+	.tulisans{
+		text-align: justify;
+		text-indent: 30px;
+		font-weight: bold;
+		font-family: cursive
+	}	
+</style>
+<body>
+	<img src="logos.png">
+	<h1>Belajar JQuery</h1>
+	<h2>Luaskan Ilmu - Luaskan Manfaat</h2>
+	<br><br>
+	<span class="tulisans p3">Mengatasi malas belajar tanpa belajar</span>
+	<br><br>
+	<div id="box1">Selamat Belajar</div>
+	<div id="dimensi"></div>
+
+	<div id="boxes_wrap">
+		<div class="boxes">Baris Pertama</div>
+		<div class="boxes">Baris Kedua</div>
+		<div class="boxes">Barsi dua setengah</div>
+		<div class="boxes">Baris Ketiga</div>
+		<div class="boxes">Baris Keempat</div>
+	</div>
+
+	<div id="box_wrap">
+		<div class="box">Baris remove</div>
+		<div class="box">Baris remove</div>
+		<div class="box">Baris remove</div>
+		<div class="box">Baris remove</div>
+		<div class="box">Baris remove</div>
+	</div>
+
+	<div id="boxe_wrap">
+		<div class="boxe">Baris empty</div>
+		<div class="boxe">Baris empty</div>
+		<div class="boxe">Baris empty</div>
+		<div class="boxe">Baris empty</div>
+		<div class="boxe">Baris empty</div>
+	</div>
+
+	<form>
+		<input type="text" id="teks-wrap">
+		<input type="submit">
+	</form>
+
+</body>
+<script src="jquery.min.js"></script>
+<script>
+	$(document).ready(function() {
+
+		//---------- Selection ----------
+
+		$('h1').css('color', 'blue');
+		$('#box1').css('fontSize', '20px');
+		$('.boxes').css('color', 'red');
+
+		$('.boxes:first').css('color', 'blue');
+		$('.boxes:last').css('color', 'blue');
+
+		//memilih berdasarkan index (index dimulao dari nol)
+		//$('.boxes:eq(index)').css('color', 'warna');
+		$('.boxes:eq(2)').css('color', 'green');
+
+		//---------- Event ----------
+
+		$('h1').click(function() {
+			$('h1').css('fontSize', '40px');
+		});
+
+		//---------- Penggunaan this ----------
+
+		$('.boxes').mouseenter(function() {
+			$(this).css('color', 'yellow');
+		});
+
+		//---------- get dan set nilai ----------
+		//---------- Mengambil dan mengubah konten HTML ----------
+
+		$('form').submit(function(event) {
+
+			var teks = $('#teks-wrap').val();
+			$('h1').text(teks);
+
+			//untuk mencegah sifat submit (refresh/ganti halaman)
+			event.preventDefault();
+
+		});
+
+		//---------- Menambah elemen ----------
+		// append prepend | after before
+
+		$('#boxes_wrap').append('<div>text-append</div>');
+		$('#boxes_wrap').prepend('<div>text-prepend</div>');
+
+		$('#boxes_wrap').after('<div>text-after</div>');
+		$('#boxes_wrap').before('<div>text-before</div>');
+
+		//---------- Menghapus elemen ----------
+		// remove | empty
+
+		$('#box_wrap').remove();
+		$('#boxe_wrap').empty();
+
+		//------- CSS di JQuery -------
+
+		$('h2').click(function(){
+			$('h2').css({
+				'color':'aqua',
+				'background':'purple',
+				'display':'inline'
+			});
+		});
+
+		//------- Metode addClass | removeClass | toggleClass -------		
+
+		$('.p3').click(function(){
+			//$('.tulisans').removeClass('tulisans');
+			$('.p3').toggleClass('tulisans');
+		});
+
+		//----- Dimensi -----
+		//----- Mengambil nilai dimensi -----
+		
+		//width() => konten
+		//innerWidth() => konten + padding
+		//outerWidth() => konten + padding + border
+		//outerWidth(true) => konten + padding + border + margin
+
+		var dimensi = $('#boxes_wrap').width();
+		$('#dimensi').text(dimensi); // menampilkan nilai
+
+		//----- Mengubah nilai dimensi -----
+
+		var nilai_dimensi = $('boxe_wrap').width(300).height(300);
+
+		//Menampilkan dan Menyembunyikan
+		//di halaman index2 =>>
+
+	});
+</script>
+</html> 

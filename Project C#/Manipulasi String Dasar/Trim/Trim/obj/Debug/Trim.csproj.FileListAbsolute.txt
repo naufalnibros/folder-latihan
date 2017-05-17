@@ -1,0 +1,5 @@
+E:\Project\Project C#\Manipulasi String Dasar\Trim\Trim\bin\Debug\Trim.exe.config
+E:\Project\Project C#\Manipulasi String Dasar\Trim\Trim\bin\Debug\Trim.exe
+E:\Project\Project C#\Manipulasi String Dasar\Trim\Trim\bin\Debug\Trim.pdb
+E:\Project\Project C#\Manipulasi String Dasar\Trim\Trim\obj\Debug\Trim.exe
+E:\Project\Project C#\Manipulasi String Dasar\Trim\Trim\obj\Debug\Trim.pdb

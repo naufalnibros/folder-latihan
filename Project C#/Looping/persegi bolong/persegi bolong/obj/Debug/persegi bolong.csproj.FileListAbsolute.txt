@@ -1,0 +1,5 @@
+E:\Project C#\persegi bolong\persegi bolong\bin\Debug\persegi bolong.exe.config
+E:\Project C#\persegi bolong\persegi bolong\bin\Debug\persegi bolong.exe
+E:\Project C#\persegi bolong\persegi bolong\bin\Debug\persegi bolong.pdb
+E:\Project C#\persegi bolong\persegi bolong\obj\Debug\persegi bolong.exe
+E:\Project C#\persegi bolong\persegi bolong\obj\Debug\persegi bolong.pdb

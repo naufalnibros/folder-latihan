@@ -1,0 +1,5 @@
+E:\Project C#\nilai huruf\nilai huruf\bin\Debug\nilai huruf.exe.config
+E:\Project C#\nilai huruf\nilai huruf\bin\Debug\nilai huruf.exe
+E:\Project C#\nilai huruf\nilai huruf\bin\Debug\nilai huruf.pdb
+E:\Project C#\nilai huruf\nilai huruf\obj\Debug\nilai huruf.exe
+E:\Project C#\nilai huruf\nilai huruf\obj\Debug\nilai huruf.pdb

@@ -1,0 +1,5 @@
+E:\Project C#\Segitiga bintang\Segitiga bintang\bin\Debug\Segitiga bintang.exe.config
+E:\Project C#\Segitiga bintang\Segitiga bintang\bin\Debug\Segitiga bintang.exe
+E:\Project C#\Segitiga bintang\Segitiga bintang\bin\Debug\Segitiga bintang.pdb
+E:\Project C#\Segitiga bintang\Segitiga bintang\obj\Debug\Segitiga bintang.exe
+E:\Project C#\Segitiga bintang\Segitiga bintang\obj\Debug\Segitiga bintang.pdb

@@ -1,0 +1,6 @@
+E:\Project\Project C#\ceiling - floor - round\ceiling - floor - round\bin\Debug\ceiling - floor - round.exe.config
+E:\Project\Project C#\ceiling - floor - round\ceiling - floor - round\bin\Debug\ceiling - floor - round.exe
+E:\Project\Project C#\ceiling - floor - round\ceiling - floor - round\bin\Debug\ceiling - floor - round.pdb
+E:\Project\Project C#\ceiling - floor - round\ceiling - floor - round\obj\Debug\ceiling - floor - round.csprojResolveAssemblyReference.cache
+E:\Project\Project C#\ceiling - floor - round\ceiling - floor - round\obj\Debug\ceiling - floor - round.exe
+E:\Project\Project C#\ceiling - floor - round\ceiling - floor - round\obj\Debug\ceiling - floor - round.pdb

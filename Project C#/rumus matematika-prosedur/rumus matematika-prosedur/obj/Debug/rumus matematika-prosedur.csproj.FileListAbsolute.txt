@@ -1,0 +1,6 @@
+E:\Project C#\rumus matematika-prosedur\rumus matematika-prosedur\bin\Debug\rumus matematika-prosedur.exe.config
+E:\Project C#\rumus matematika-prosedur\rumus matematika-prosedur\bin\Debug\rumus matematika-prosedur.exe
+E:\Project C#\rumus matematika-prosedur\rumus matematika-prosedur\bin\Debug\rumus matematika-prosedur.pdb
+E:\Project C#\rumus matematika-prosedur\rumus matematika-prosedur\obj\Debug\rumus matematika-prosedur.csprojResolveAssemblyReference.cache
+E:\Project C#\rumus matematika-prosedur\rumus matematika-prosedur\obj\Debug\rumus matematika-prosedur.exe
+E:\Project C#\rumus matematika-prosedur\rumus matematika-prosedur\obj\Debug\rumus matematika-prosedur.pdb

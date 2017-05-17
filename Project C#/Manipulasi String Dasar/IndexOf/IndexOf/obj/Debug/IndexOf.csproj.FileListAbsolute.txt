@@ -1,0 +1,5 @@
+E:\Project\Project C#\Manipulasi String Dasar\IndexOf\IndexOf\bin\Debug\IndexOf.exe.config
+E:\Project\Project C#\Manipulasi String Dasar\IndexOf\IndexOf\bin\Debug\IndexOf.exe
+E:\Project\Project C#\Manipulasi String Dasar\IndexOf\IndexOf\bin\Debug\IndexOf.pdb
+E:\Project\Project C#\Manipulasi String Dasar\IndexOf\IndexOf\obj\Debug\IndexOf.exe
+E:\Project\Project C#\Manipulasi String Dasar\IndexOf\IndexOf\obj\Debug\IndexOf.pdb

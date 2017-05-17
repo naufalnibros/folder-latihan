@@ -1,0 +1,6 @@
+E:\Project C#\fungsi pangkat\fungsi pangkat\bin\Debug\fungsi pangkat.exe.config
+E:\Project C#\fungsi pangkat\fungsi pangkat\bin\Debug\fungsi pangkat.exe
+E:\Project C#\fungsi pangkat\fungsi pangkat\bin\Debug\fungsi pangkat.pdb
+E:\Project C#\fungsi pangkat\fungsi pangkat\obj\Debug\fungsi pangkat.csprojResolveAssemblyReference.cache
+E:\Project C#\fungsi pangkat\fungsi pangkat\obj\Debug\fungsi pangkat.exe
+E:\Project C#\fungsi pangkat\fungsi pangkat\obj\Debug\fungsi pangkat.pdb

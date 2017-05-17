@@ -1,0 +1,5 @@
+E:\Project\Project C#\Manipulasi String Dasar\LastIndexOf\LastIndexOf\bin\Debug\LastIndexOf.exe.config
+E:\Project\Project C#\Manipulasi String Dasar\LastIndexOf\LastIndexOf\bin\Debug\LastIndexOf.exe
+E:\Project\Project C#\Manipulasi String Dasar\LastIndexOf\LastIndexOf\bin\Debug\LastIndexOf.pdb
+E:\Project\Project C#\Manipulasi String Dasar\LastIndexOf\LastIndexOf\obj\Debug\LastIndexOf.exe
+E:\Project\Project C#\Manipulasi String Dasar\LastIndexOf\LastIndexOf\obj\Debug\LastIndexOf.pdb

@@ -1,0 +1,5 @@
+E:\Project\Project C#\Manipulasi String Dasar\SubString2\SubString2\bin\Debug\SubString2.exe.config
+E:\Project\Project C#\Manipulasi String Dasar\SubString2\SubString2\bin\Debug\SubString2.exe
+E:\Project\Project C#\Manipulasi String Dasar\SubString2\SubString2\bin\Debug\SubString2.pdb
+E:\Project\Project C#\Manipulasi String Dasar\SubString2\SubString2\obj\Debug\SubString2.exe
+E:\Project\Project C#\Manipulasi String Dasar\SubString2\SubString2\obj\Debug\SubString2.pdb

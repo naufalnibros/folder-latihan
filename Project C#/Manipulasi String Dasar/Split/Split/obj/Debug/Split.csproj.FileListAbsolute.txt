@@ -1,0 +1,5 @@
+E:\Project\Project C#\Manipulasi String Dasar\Split\Split\bin\Debug\Split.exe.config
+E:\Project\Project C#\Manipulasi String Dasar\Split\Split\bin\Debug\Split.exe
+E:\Project\Project C#\Manipulasi String Dasar\Split\Split\bin\Debug\Split.pdb
+E:\Project\Project C#\Manipulasi String Dasar\Split\Split\obj\Debug\Split.exe
+E:\Project\Project C#\Manipulasi String Dasar\Split\Split\obj\Debug\Split.pdb

@@ -1,0 +1,210 @@
+h1 {
+	color: blue;
+	text-align: center;
+	text-decoration: underline;
+}
+
+#title_id {
+	color:green;
+	text-transform: uppercase;
+	display: inline;
+}
+
+body {
+	/*
+	background-color: #fdfdfd;
+	background-image: url(img/background.png);
+	background-repeat: no-repeat;
+	background-attachment: fixed;
+	background-position: right top;
+	*/ 
+	background: #fdfdfd url(img/background.png) no-repeat fixed right top;
+}
+
+#text_panjang {
+	text-align: justify;
+	text-indent: 30px;
+	font-weight: bold;
+}
+
+#text_font{
+	text-align: justify;
+	text-indent: 30px;
+	font-size: 20px;
+	font-family: cursive ;
+}
+
+/* kondisi biasa */
+.menu_header:link{
+	background: grey;
+	color: white;
+	font-weight: bold;
+}
+
+/* setelah dikunjungi */
+.menu_header:visited{
+	background: grey;
+	color: white; 
+	font-weight: bold;
+}
+
+/* hover : kondisi saat mouse diatasnya */
+.menu_header:hover{
+	background: green;
+}
+
+/* kondisi saat diklik */
+.menu_header:actived{
+	background: white;
+}
+
+#dimensi_elemen{
+	font-size: 20px;
+	font-family: monospace;
+	text-align: justify;
+	background: aqua;
+	width:60%;
+	height: 170px;
+}
+
+/* display : inline - block - inline-block; */
+
+.menu_header{
+	display: inline-block;
+	height: 30px;
+	width: 70px;
+	text-decoration: none;
+}
+
+.text_inline{
+	display: inline;
+}
+
+/* Menghilangkan elemen */
+
+#hilang_elemen1{
+	display: none;
+}
+
+#hilang_elemen2{
+	visibility: hidden;
+}
+
+/* Membuat margin :: Jarak elemen dengan elemen lainnya */
+
+#menu_wrap{
+	/*
+	margin-bottom: 50px;
+	margin-top: 50px;
+	margin-left: 80px;
+	*/
+
+	/* margin: top right bottom left; */
+
+	margin: 50px 0 50px 80px;
+}
+
+/* Membuat padding dan border */
+
+.menu_padding{
+	color: white;
+
+	margin: 50px 0 50px 80px;
+
+	border-width: 2px;
+	border-style: solid;
+	border-color: aqua;
+	
+	text-decoration: none;
+
+	padding: 10px; /* padding-top: 10; padding-right 10; padding-bottom: 10; padding-left: 10; */
+	padding: 10px 10px; /* padding top-bottom: 10;  padding right-left: 10; */
+}
+
+.menu_padding:hover{
+	background-color: green;
+}
+
+/*--- mengatur posisi di css ---*/
+	/* 
+	1. static 	= kondisi biasanya (tidak ada perubahan sama sekali)
+	2. relative	= 
+	3. absolute
+	4. fixed
+	 */
+
+#menu_form{
+	/*	position: relative; posisi ini tidak berpengaruh dengan elemen lain */
+	position: absolute;
+	top: 80px;
+	left: 30px;
+}
+
+#h2_form{
+	position: fixed; /*	position: fixed; posisi ini mengikuti browser. kalau di scroll terus mengikuti */
+	top: 80px;
+	left: 300px;
+
+	background-color: blue;
+
+	color: white;
+
+	padding: 10px;
+
+	border-style: solid;
+	border-color: red;
+	border-width: 2px;
+}
+
+/* z-index = mengatur posisi terdepan pada elemen. */
+
+#z_index2{
+	position: fixed;
+
+	background-color: aqua;
+
+	z-index: -1;
+}
+
+#z_index1{
+	background-color: blue;
+
+	
+}
+
+#z_index{
+	background-color: red;  
+}
+
+/* Membuat efect float : ex berada pada file kontak.html */
+
+/* float = digunakan untuk membuat suatu elemen agar elemen berikutnya bisa mengisi konten berikutnya */
+
+#text_margin_kontak{
+	text-align: justify;
+}
+
+table{
+	float: right;
+	margin-left: 20px;
+	margin-right: 100px; 
+}
+
+/* Mencegah elemen float dengan clear: ; */
+
+#text_biasa{
+	clear: both; /* both = right & left */
+}
+
+/* Masih tentang float */
+
+ul, ol, dl{
+	float: left;
+	margin: 0px;
+	padding: 0px;
+	width: 33.33%;
+}
+
+#copyright{
+	text-align: center;
+}

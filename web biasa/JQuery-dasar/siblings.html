@@ -1,0 +1,45 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<meta charset="utf-8">
+	<title>JQuery - Belajar Siblings</title>
+</head>
+<body>
+	<img src="logos.png">
+	<h1>JQuery - Belajar Siblings</h1>
+
+	<ul>
+		<li id="efek-next">Efek next()</li>
+		<li>Membaca</li>
+		<li>Mendengar</li>
+		<li>Menggambar</li>
+		<li id="sibl">Efek siblings()</li>
+		<li>Efek nextUntil()</li>
+		<li>Efek nextUntil()</li>
+		<li>Efek nextUntil()</li>
+		<li>Efek nextUntil()</li>
+		<li id="efek-next-all">Efek nextAll()</li>
+		<li>Memakan</li>
+		<li>Memakan</li>
+		<li>Memakan</li>
+	</ul>
+
+</body>
+<script src="jquery.min.js"></script>
+<script type="text/javascript">
+	$(document).ready(function(){
+
+		//siblings, next, nextAll. nextUntil('param') ~ prev
+
+		//siblings => untuk memilih semua elemen yang berada satu parent dengan dia
+		$('#sibl').siblings().css('fontSize', '25px');
+		//next => memilih satu elemen setelah elemennya
+		$('#efek-next').next().css('color', 'yellow');
+		//nextAll => memilih semua setelahnya
+		$('#efek-next-all').nextAll().css('color', 'green');
+		//nextUntil => milih sampai
+		$('#sibl').nextUntil('#efek-next-all').css('background', 'purple');
+
+	});
+</script>
+</html>

@@ -1,0 +1,45 @@
+<!DOCTYPE html>
+<html xmlns="htttp://www.w3.org/1999/xhtml">
+<meta charset="utf-8">
+<head>
+	<title>Belajar JavaScript</title>
+</head>
+<style>
+	#wrap {
+		font-size: 25px;
+		background: purple;
+		color: white;
+	}
+</style>
+<body>
+	<h1>Tipe Data Angka</h1>
+	<img src="logos.png" height="100" width="100" alt="logo">
+	
+	<div id="wrap"></div>
+
+	<script type="text/javascript">
+		//Deklarasi Variabel
+		
+		/*
+		1. Memilih id wrap 
+		2. Metode innerHTML = nulis konten;
+		*/
+
+		/*
+			- Nama dimulai dengan huruf atau $ atau _
+			- Nama boleh mengandung huruf, angka, underscore _ dan $ dollar
+			- Nama itu case sensitiv
+			- Ada 'reserve words' yang tidak boleh dipakai
+		*/
+
+		//tipe-data string
+		var tulisan = "Belajar JavaScript 12345";
+
+		//tipe-data number
+		var angka  = 1000;
+		var angka2 = 999 + "1";
+		var angka3 = 999.123 + 0.1; 
+		document.getElementById('wrap').innerHTML = angka2;
+	</script>
+</body>
+</html>

@@ -1,0 +1,5 @@
+E:\Project C#\Luas Segitiga\Luas Segitiga\bin\Debug\Luas Segitiga.exe.config
+E:\Project C#\Luas Segitiga\Luas Segitiga\bin\Debug\Luas Segitiga.exe
+E:\Project C#\Luas Segitiga\Luas Segitiga\bin\Debug\Luas Segitiga.pdb
+E:\Project C#\Luas Segitiga\Luas Segitiga\obj\Debug\Luas Segitiga.exe
+E:\Project C#\Luas Segitiga\Luas Segitiga\obj\Debug\Luas Segitiga.pdb

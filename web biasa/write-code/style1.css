@@ -1,0 +1,44 @@
+body{
+    margin: 0%;
+    color: #495463;
+}
+
+header{
+    background-color: #495463;
+    position: relative;
+
+}
+
+.header-top{
+    padding: 15px 20px; 
+    color: rgba(255, 255, 255, 0.63);
+    text-shadow: 0 1px 1px rgba(0, 0, 0, 0.1);
+}
+
+#header-bottom {
+    background-color: #20b2aa;
+}
+
+.site-description {
+    float: left;
+    margin-bottom: 0;
+    margin-top: 0;
+    padding-right: 15px;
+    text-align: left;
+    top: 0px;
+    width: 35%;
+
+    font-size: 1rem;
+    margin: -0.1em 0 1em 0;
+    position: relative;
+    word-wrap: break-word; 
+
+}
+
+
+#content{
+    background-color: white;
+    text-align: justify;
+    margin: 120px;
+}
+

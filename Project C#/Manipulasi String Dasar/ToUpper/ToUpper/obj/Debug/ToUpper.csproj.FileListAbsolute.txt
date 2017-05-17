@@ -1,0 +1,5 @@
+E:\Project\Project C#\Manipulasi String Dasar\ToUpper\ToUpper\bin\Debug\ToUpper.exe.config
+E:\Project\Project C#\Manipulasi String Dasar\ToUpper\ToUpper\bin\Debug\ToUpper.exe
+E:\Project\Project C#\Manipulasi String Dasar\ToUpper\ToUpper\bin\Debug\ToUpper.pdb
+E:\Project\Project C#\Manipulasi String Dasar\ToUpper\ToUpper\obj\Debug\ToUpper.exe
+E:\Project\Project C#\Manipulasi String Dasar\ToUpper\ToUpper\obj\Debug\ToUpper.pdb

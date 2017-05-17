@@ -1,0 +1,104 @@
+<!DOCTYPE html>
+<html xmlns="htttp://www.w3.org/1999/xhtml">
+<meta charset="utf-8">
+<head>
+	<title>Belajar JavaScript</title>
+</head>
+<style>
+	#wrap, #wrap2 {
+		font-size: 25px;
+		background: purple;
+		color: white;
+	}
+	#wrap3 {
+		font-size: 25px;
+		background: blue;
+		color: white;
+	}
+	#wrap4 {
+		font-size: 25px;
+		background: green;
+		color: white;
+	}
+</style>
+<body>
+	<h1>Metode Number</h1>
+	<img src="logos.png" height="100" width="100" alt="logo">
+	
+	<div id="wrap"></div>
+	<div id="wrap2"></div>
+	<div id="wrap3"></div>
+	<div id="wrap4"></div>
+
+	<script type="text/javascript">
+		//------- FUNGSI -------
+
+		//Menuliskan Fungsi
+		//function namaFungsi(){ tulis kode disini }
+
+		//	function printText()
+		//	{
+		//		alert("HALOO!!");
+		//		var x = "Belajar Koding";
+		//		document.getElementById('wrap').innerHTML = x;
+		//	}
+
+		//Memanggil Fungsi
+		//	printText();
+
+		//(1)------- Parameter pada fungsi -------
+		function printText(nama)
+		{
+			var text = nama + " Menyenangkan Sekali"
+			document.getElementById('wrap').innerHTML = text;
+		}
+
+		var nama = "Belajar Koding"
+		printText(nama + " 123");
+
+		//(2)------ Multiple Parameter ------
+
+		function printTeks(nama, nama2, nama3) 
+		{
+			var teks = nama + nama2 + nama3;
+			document.getElementById('wrap2').innerHTML = teks;
+		}
+
+		printTeks("Belajar", " Coding", " itu Menyenangkan");
+
+		//(3)------ Return pd JavaScript ------
+		//fungsi return = ketika kita memanggil satu fungsi kita mau mengembalikan satu nilai
+
+		function menjumlahkan(bil1, bil2) 
+		{
+			return bil1 + bil2;
+		}
+
+		var angka = menjumlahkan(20, 30);
+		document.getElementById('wrap3').innerHTML = angka;
+
+		//(4)------ Scope Variabel ------
+		//Global var & Local var
+
+		//global
+		var tulisan = "di Sekolah Koding";
+
+		function printTulisan() 
+		{
+			//local var = tidak akan muncul jk "var tulisan2" di panggil di luar fungsi printTulisan()
+			//var tulisan2 = " Belajar yang lain";
+
+			//document.getElementById('wrap4').innerHTML = tulisan2;
+
+			//global var
+			tulisan2 = "Belajar yang lain ||";
+
+			//mengubah nilai tulisan dg global var
+			tulisan = " di situs lain";
+		}
+
+		printTulisan();
+		document.getElementById('wrap4').innerHTML = tulisan2 + tulisan;
+	</script>
+</body>
+</html>

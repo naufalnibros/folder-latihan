@@ -1,0 +1,126 @@
+<!DOCTYPE html>
+<html xmlns="htttp://www.w3.org/1999/xhtml">
+<meta charset="utf-8">
+<head>
+	<title>Belajar JavaScript</title>
+</head>
+<style>
+	#wrap {
+		font-size: 25px;
+		background: purple;
+		color: white;
+	}
+</style>
+<body>
+	<h1>Metode Number</h1>
+	<img src="logos.png" height="100" width="100" alt="logo">
+	
+	<div id="wrap"></div>
+
+	<script type="text/javascript">
+		//Deklarasi Variabel
+		
+		/*
+		1. Memilih id wrap 
+		2. Metode innerHTML = nulis konten;
+		*/
+
+		/*
+			- Nama dimulai dengan huruf atau $ atau _
+			- Nama boleh mengandung huruf, angka, underscore _ dan $ dollar
+			- Nama itu case sensitiv
+			- Ada 'reserve words' yang tidak boleh dipakai
+		*/
+
+		//tipe-data string
+		var tulisan = "Belajar JavaScript 12345";
+
+		//tipe-data number
+		var angka  = 1000;
+		var angka2 = 999 + "1";
+		var angka3 = 999.123 + 0.1; 
+		var angka4 = 256;
+
+		angka4--;
+
+		//Belajar tentang Metode Java Script
+		//Apa itu metode dlm JavaScript? Metode adalah fungsi yang sudah otomatis datang dari javascript untuk kita manfaatkan.
+
+		//------- Metode Number -------
+		//1. toFixed() = gunanya untuk menentukan berapa angka yang akan diambil dibelakang koma (,)
+		var angka_baru = angka3.toFixed(2); //Mengambil dua angka dibelakang koma
+
+		//2. toString() = gunanya untuk merubah tipe-data number menjadi tipe-data string
+		var angka_baru2 = angka.toString() + angka4;
+
+		//random() = cara untuk menghasilkan angka secara acak
+		var angka_baru3 = Math.random().toFixed(2)*100;
+
+		//min(a,b,c) = mencari nilai terkecil
+		var angka_baru4 = Math.min(angka4, angka2, angka3);
+
+		//max(a, b, c) = mencari nilai terbesar
+		var angka_baru5 = Math.max(angka4, angka2, angka3);
+
+		//round(123.123) =  Cara untuk membulatkan angka ke angka terdekatnya
+		var angka_baru6 = Math.round(431.399);
+
+		//ceil(123.123) = Cara untuk membulatkan angka ke angka keatasnya ex. 123.345 == 124
+		var angka_baru7 = Math.ceil(431.399);
+
+		//floor(123.999) = Cara untuk membulatkan angka ke angka bawahnya ex 123.999 == 123
+		var angka_baru8 = Math.floor(431.999);
+
+		//Random Spesific Formula -> Math.floor( Math.random() * x) + y;
+		var x = 10; //Range .jarak
+		var y = 5;	//batas minimal
+		//batas max = y+x;
+		var angka_baru9 = Math.floor(Math.random() * x) + y;
+
+
+		//------- Metode String -------
+		//length = menghitung berapa panajang tipe data string
+		var nama = "naufal";
+		var hasil = nama.length + " huruf";
+
+		//indexOf() = mencari text tertentu dalam suatu string (menghitungnya dimulai dari nol)
+		hasil = nama.indexOf("f");
+
+		//lastIndexOf() = mencari text yang terakhir dalam suatu string (menghitungnya dimulai dari nol)
+		nama = "naufal nibros";
+		hasil = nama.lastIndexOf("n");
+
+		//search() = untuk mencari text (menghitungnya dimulai dari nol)
+		hasil = nama.search("bros");
+
+		//charAt() = mencari posisi text dengan angka (menghitungnya dimulai dari nol)
+		hasil = nama.charAt(4);
+
+		//toUpperCase() = merubah semua huruf menjadi besar
+		hasil = nama.toUpperCase();
+
+		//toLOwerCase() = merubah semua huruf menjadi kecil
+		nama = "NauFaL ainun NiBroS";
+		hasil = nama.toLowerCase();
+
+		//replace() = untuk mereplace
+		hasil = nama.replace("ainun","xxx");
+
+		//substring(start, end) = untuk mengambil bagian tertentu dari awal sampai akhir
+		hasil = nama.substring(1, 6);
+
+		//substr(start, length) = mengambil mulai dari mana, panjang nya berapa
+		hasil =  nama.substr(7, 5);
+
+		//parseInt(namaVar); = merubah string menjadi integer
+		nama = 130;
+		hasil = parseInt(nama) + 10;
+
+		//parseFloat(namaVar); = merubah string menjadi float
+		nama = 130.4
+		hasil = parseFloat(nama) + 10.3;
+
+		document.getElementById('wrap').innerHTML = hasil;
+	</script>
+</body>
+</html>

@@ -1,0 +1,50 @@
+<!DOCTYPE html>
+<html xmlns="htttp://www.w3.org/1999/xhtml">
+<meta charset="utf-8">
+<head>
+	<title>DOM JavaScript</title>
+</head>
+<body>
+
+	<h1>Belajar DOM JavaScript</h1>
+	<img src="logos.png" height="300" width="300" alt="logo">
+	
+	<div id="box1"></div>
+
+	<div class="boxes"></div>
+	<div class="boxes"></div>
+	<div class="boxes"></div>
+
+	<ul>
+		<li>HTML</li>
+		<li>CSS</li>
+		<li>JavaScript</li>
+		<div></div>
+	</ul>
+
+	<script type="text/javascript">
+		//selektor
+
+		document.getElementById('box1').innerHTML = "Belajar Koding Gampang";
+
+		var boxes = document.getElementsByClassName('boxes');
+		boxes[0].innerHTML = "konten 1";
+		boxes[1].innerHTML = "konten 2";
+		boxes[2].innerHTML = "konten 3";
+
+		var list = document.getElementsByTagName('li');
+		list[0].innerHTML = "PHP";
+		list[1].innerHTML = "SASS";
+		list[2].innerHTML = "JQuery";
+
+		//Selektor luar biasa
+		//document.querySelectorAll('class/id/tag').[index]. = "";
+
+		document.querySelectorAll('#box1')[0].innerHTML = "query selector all";
+		document.querySelectorAll('.boxes')[0].innerHTML = "query selector all";
+		document.querySelectorAll('ul div')[0].innerHTML = "query selector all";
+
+
+	</script>
+</body>
+</html>

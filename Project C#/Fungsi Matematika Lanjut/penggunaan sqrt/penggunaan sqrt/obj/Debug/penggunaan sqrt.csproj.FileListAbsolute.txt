@@ -1,0 +1,6 @@
+E:\Project C#\penggunaan sqrt\penggunaan sqrt\bin\Debug\penggunaan sqrt.exe.config
+E:\Project C#\penggunaan sqrt\penggunaan sqrt\bin\Debug\penggunaan sqrt.exe
+E:\Project C#\penggunaan sqrt\penggunaan sqrt\bin\Debug\penggunaan sqrt.pdb
+E:\Project C#\penggunaan sqrt\penggunaan sqrt\obj\Debug\penggunaan sqrt.csprojResolveAssemblyReference.cache
+E:\Project C#\penggunaan sqrt\penggunaan sqrt\obj\Debug\penggunaan sqrt.exe
+E:\Project C#\penggunaan sqrt\penggunaan sqrt\obj\Debug\penggunaan sqrt.pdb

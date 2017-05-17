@@ -1,0 +1,69 @@
+<!DOCTYPE html>
+<html xmlns="htttp://www.w3.org/1999/xhtml">
+<meta charset="utf-8">
+<head>
+	<title>DOM JavaScript</title>
+</head>
+
+<style type="text/css">
+	.border-gambar{
+		border: 4px solid black;
+	}
+</style>
+
+<body>
+	<h1>Belajar DOM JavaScript</h1>
+	<img onclick="berubah()" src="logos.png" height="300" width="300" alt="logo" id="gambar" class="border-gambar">
+
+	<input type="text" value="nama" id="input">
+
+	<input type="text" value="nama ku" id="input2">
+
+	<input type="text" value="nama nya" id="input3">
+	
+	<script type="text/javascript">
+		//------------ Event ------------
+		//cara 1
+		var img = document.getElementById('gambar');
+
+		function berubah() {
+			img.style.background = 'red';
+		}
+
+		//cara 2
+		var input = document.getElementById('input');
+
+		input.onclick = function(){ berubah2() };
+		function berubah2() {
+			input.style.background = 'green';
+		}
+		//atau bisa juga dengan cara ini
+		var input2 = document.getElementById('input2');
+
+		input2.onclick = function(){
+			input2.style.background = 'blue';
+		}
+
+		//cara 3
+		//namaVar.addEventListener('namaEvent', fungsi yang mau dijalankan);
+		var input3 = document.getElementById('input3');
+
+		function berubah3() {
+			input3.style.background = 'brown';
+		}
+
+		input3.addEventListener('click', function(){ 
+			berubah3()
+		});
+
+		input3.addEventListener('mouseenter', function() {
+			input3.style.background = 'blue';
+		});
+
+		input3.addEventListener('mouseleave', function() {
+			input3.style.background = 'white';
+		});
+
+	</script>
+</body>
+</html>

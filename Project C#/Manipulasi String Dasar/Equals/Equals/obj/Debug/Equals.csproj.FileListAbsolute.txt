@@ -1,0 +1,6 @@
+E:\Project\Project C#\Manipulasi String Dasar\Equals\Equals\bin\Debug\Equals.exe.config
+E:\Project\Project C#\Manipulasi String Dasar\Equals\Equals\bin\Debug\Equals.exe
+E:\Project\Project C#\Manipulasi String Dasar\Equals\Equals\bin\Debug\Equals.pdb
+E:\Project\Project C#\Manipulasi String Dasar\Equals\Equals\obj\Debug\Equals.csprojResolveAssemblyReference.cache
+E:\Project\Project C#\Manipulasi String Dasar\Equals\Equals\obj\Debug\Equals.exe
+E:\Project\Project C#\Manipulasi String Dasar\Equals\Equals\obj\Debug\Equals.pdb

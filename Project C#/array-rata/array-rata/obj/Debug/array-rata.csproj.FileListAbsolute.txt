@@ -1,0 +1,6 @@
+E:\Project C#\array-rata\array-rata\bin\Debug\array-rata.exe.config
+E:\Project C#\array-rata\array-rata\bin\Debug\array-rata.exe
+E:\Project C#\array-rata\array-rata\bin\Debug\array-rata.pdb
+E:\Project C#\array-rata\array-rata\obj\Debug\array-rata.csprojResolveAssemblyReference.cache
+E:\Project C#\array-rata\array-rata\obj\Debug\array-rata.exe
+E:\Project C#\array-rata\array-rata\obj\Debug\array-rata.pdb

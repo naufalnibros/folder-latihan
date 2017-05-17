@@ -1,0 +1,5 @@
+E:\Project C#\Kode Neagara\Kode Neagara\bin\Debug\Kode Neagara.exe.config
+E:\Project C#\Kode Neagara\Kode Neagara\bin\Debug\Kode Neagara.exe
+E:\Project C#\Kode Neagara\Kode Neagara\bin\Debug\Kode Neagara.pdb
+E:\Project C#\Kode Neagara\Kode Neagara\obj\Debug\Kode Neagara.exe
+E:\Project C#\Kode Neagara\Kode Neagara\obj\Debug\Kode Neagara.pdb

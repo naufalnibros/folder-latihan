@@ -1,0 +1,5 @@
+E:\Project\Project C#\Manipulasi String Dasar\ToLower\ToLower\bin\Debug\ToLower.exe.config
+E:\Project\Project C#\Manipulasi String Dasar\ToLower\ToLower\bin\Debug\ToLower.exe
+E:\Project\Project C#\Manipulasi String Dasar\ToLower\ToLower\bin\Debug\ToLower.pdb
+E:\Project\Project C#\Manipulasi String Dasar\ToLower\ToLower\obj\Debug\ToLower.exe
+E:\Project\Project C#\Manipulasi String Dasar\ToLower\ToLower\obj\Debug\ToLower.pdb

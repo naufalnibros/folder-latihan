@@ -1,0 +1,42 @@
+<!DOCTYPE html>
+<html xmlns="htttp://www.w3.org/1999/xhtml">
+<meta charset="utf-8">
+<head>
+	<title>DOM JavaScript</title>
+</head>
+<body>
+	<h1>Belajar DOM JavaScript</h1>
+	<img src="logos.png" height="300" width="300" alt="logo">
+	
+	<div id="box1">
+		<div id="p1">Paragraf 1</div>
+	</div>
+
+	<script type="text/javascript">
+		
+		//------------- Menambahkan, menghapus dan mengedit elemen html -------------
+
+		//Menambahkan Elemen
+		var el = document.createElement('h2');
+		var text = document.createTextNode('Belajar Programming Gampang');
+		var box = document.getElementById('box1');
+
+		el.appendChild(text);
+		box.appendChild(el);
+
+		//Mengahapus 
+		// box.removeChild(el);
+
+		//Mengedit
+		var el2 = document.createElement('h3');
+		var text2 = document.createTextNode('Sekarang Belajar!!');
+
+		el2.appendChild(text2);
+
+		var p1 = document.getElementById('p1');
+
+		box.replaceChild(el2, p1);
+
+	</script>
+</body>
+</html>

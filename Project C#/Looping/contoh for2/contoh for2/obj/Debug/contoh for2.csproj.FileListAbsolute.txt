@@ -1,0 +1,5 @@
+E:\Project C#\contoh for2\contoh for2\bin\Debug\contoh for2.exe.config
+E:\Project C#\contoh for2\contoh for2\bin\Debug\contoh for2.exe
+E:\Project C#\contoh for2\contoh for2\bin\Debug\contoh for2.pdb
+E:\Project C#\contoh for2\contoh for2\obj\Debug\contoh for2.exe
+E:\Project C#\contoh for2\contoh for2\obj\Debug\contoh for2.pdb

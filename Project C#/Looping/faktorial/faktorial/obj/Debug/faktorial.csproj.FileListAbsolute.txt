@@ -1,0 +1,5 @@
+E:\Project C#\faktorial\faktorial\bin\Debug\faktorial.exe.config
+E:\Project C#\faktorial\faktorial\bin\Debug\faktorial.exe
+E:\Project C#\faktorial\faktorial\bin\Debug\faktorial.pdb
+E:\Project C#\faktorial\faktorial\obj\Debug\faktorial.exe
+E:\Project C#\faktorial\faktorial\obj\Debug\faktorial.pdb

@@ -1,0 +1,6 @@
+E:\Project C#\penggunaan sin\penggunaan sin\bin\Debug\penggunaan sin.exe.config
+E:\Project C#\penggunaan sin\penggunaan sin\bin\Debug\penggunaan sin.exe
+E:\Project C#\penggunaan sin\penggunaan sin\bin\Debug\penggunaan sin.pdb
+E:\Project C#\penggunaan sin\penggunaan sin\obj\Debug\penggunaan sin.csprojResolveAssemblyReference.cache
+E:\Project C#\penggunaan sin\penggunaan sin\obj\Debug\penggunaan sin.exe
+E:\Project C#\penggunaan sin\penggunaan sin\obj\Debug\penggunaan sin.pdb

@@ -1,0 +1,9 @@
+E:\Project C#\penggunaan pow\penggunaan pow\bin\Debug\penggunaan pow.exe.config
+E:\Project C#\penggunaan pow\penggunaan pow\bin\Debug\penggunaan pow.exe
+E:\Project C#\penggunaan pow\penggunaan pow\bin\Debug\penggunaan pow.pdb
+E:\Project C#\penggunaan pow\penggunaan pow\obj\Debug\penggunaan pow.csprojResolveAssemblyReference.cache
+E:\Project C#\penggunaan pow\penggunaan pow\obj\Debug\penggunaan pow.exe
+E:\Project C#\penggunaan pow\penggunaan pow\obj\Debug\penggunaan pow.pdb
+E:\Project C#\Fungsi Matematika Lanjut\penggunaan pow\penggunaan pow\bin\Debug\penggunaan pow.exe.config
+E:\Project C#\Fungsi Matematika Lanjut\penggunaan pow\penggunaan pow\obj\Debug\penggunaan pow.exe
+E:\Project C#\Fungsi Matematika Lanjut\penggunaan pow\penggunaan pow\obj\Debug\penggunaan pow.pdb

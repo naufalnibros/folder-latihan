@@ -1,0 +1,5 @@
+E:\Project C#\fungsi segitiga\fungsi segitiga\bin\Debug\fungsi segitiga.exe.config
+E:\Project C#\fungsi segitiga\fungsi segitiga\bin\Debug\fungsi segitiga.exe
+E:\Project C#\fungsi segitiga\fungsi segitiga\bin\Debug\fungsi segitiga.pdb
+E:\Project C#\fungsi segitiga\fungsi segitiga\obj\Debug\fungsi segitiga.exe
+E:\Project C#\fungsi segitiga\fungsi segitiga\obj\Debug\fungsi segitiga.pdb

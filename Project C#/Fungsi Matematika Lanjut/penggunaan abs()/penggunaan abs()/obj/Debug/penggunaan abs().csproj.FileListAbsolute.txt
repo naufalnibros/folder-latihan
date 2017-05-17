@@ -1,0 +1,6 @@
+E:\Project\Project C#\penggunaan abs()\penggunaan abs()\bin\Debug\penggunaan abs().exe.config
+E:\Project\Project C#\penggunaan abs()\penggunaan abs()\bin\Debug\penggunaan abs().exe
+E:\Project\Project C#\penggunaan abs()\penggunaan abs()\bin\Debug\penggunaan abs().pdb
+E:\Project\Project C#\penggunaan abs()\penggunaan abs()\obj\Debug\penggunaan abs().csprojResolveAssemblyReference.cache
+E:\Project\Project C#\penggunaan abs()\penggunaan abs()\obj\Debug\penggunaan abs().exe
+E:\Project\Project C#\penggunaan abs()\penggunaan abs()\obj\Debug\penggunaan abs().pdb

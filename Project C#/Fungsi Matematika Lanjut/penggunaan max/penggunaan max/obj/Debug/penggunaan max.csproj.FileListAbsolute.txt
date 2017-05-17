@@ -1,0 +1,7 @@
+E:\Project C#\penggunaan max\penggunaan max\bin\Debug\penggunaan max.exe.config
+E:\Project\Project C#\Fungsi Matematika Lanjut\penggunaan max\penggunaan max\bin\Debug\penggunaan max.exe.config
+E:\Project\Project C#\Fungsi Matematika Lanjut\penggunaan max\penggunaan max\bin\Debug\penggunaan max.exe
+E:\Project\Project C#\Fungsi Matematika Lanjut\penggunaan max\penggunaan max\bin\Debug\penggunaan max.pdb
+E:\Project\Project C#\Fungsi Matematika Lanjut\penggunaan max\penggunaan max\obj\Debug\penggunaan max.csprojResolveAssemblyReference.cache
+E:\Project\Project C#\Fungsi Matematika Lanjut\penggunaan max\penggunaan max\obj\Debug\penggunaan max.exe
+E:\Project\Project C#\Fungsi Matematika Lanjut\penggunaan max\penggunaan max\obj\Debug\penggunaan max.pdb

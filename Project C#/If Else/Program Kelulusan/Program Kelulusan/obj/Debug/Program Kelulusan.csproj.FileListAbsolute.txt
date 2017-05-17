@@ -1,0 +1,5 @@
+E:\Project C#\Program Kelulusan\Program Kelulusan\bin\Debug\Program Kelulusan.exe.config
+E:\Project C#\Program Kelulusan\Program Kelulusan\bin\Debug\Program Kelulusan.exe
+E:\Project C#\Program Kelulusan\Program Kelulusan\bin\Debug\Program Kelulusan.pdb
+E:\Project C#\Program Kelulusan\Program Kelulusan\obj\Debug\Program Kelulusan.exe
+E:\Project C#\Program Kelulusan\Program Kelulusan\obj\Debug\Program Kelulusan.pdb

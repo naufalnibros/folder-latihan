@@ -1,0 +1,5 @@
+E:\Project\Project C#\Manipulasi String Dasar\Replace\Replace\bin\Debug\Replace.exe.config
+E:\Project\Project C#\Manipulasi String Dasar\Replace\Replace\bin\Debug\Replace.exe
+E:\Project\Project C#\Manipulasi String Dasar\Replace\Replace\bin\Debug\Replace.pdb
+E:\Project\Project C#\Manipulasi String Dasar\Replace\Replace\obj\Debug\Replace.exe
+E:\Project\Project C#\Manipulasi String Dasar\Replace\Replace\obj\Debug\Replace.pdb

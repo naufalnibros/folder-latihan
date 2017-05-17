@@ -1,0 +1,11 @@
+body{
+	background-color: #1f253d;
+}
+header {
+	background-color: white;
+}
+.main-container {
+	font-family: 'Ubuntu', sans-serif;
+	width: 950px;
+	height: 1725px;
+	margin: 6em auto;

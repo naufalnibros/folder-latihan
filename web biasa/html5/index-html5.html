@@ -1,0 +1,124 @@
+<!DOCTYPE html>
+<html xmlns="htttp://www.w3.org/1999/xhtml">
+<head>
+	<meta charset="utf-8">
+	<title>Belajar HTML5</title>
+	<style type="text/css">
+		body {
+			font-family: verdana, sans-serif;
+			font-size: 12px;
+		}
+		#header, #nav, #main-content, #sidebar-content, #footer {
+			border: 1px solid grey;
+			margin: 5px;
+			padding: 5px;
+		}
+		#main-content {
+			float: left;
+			width: 60%;
+		}
+		#sidebar-content {
+			float: left;
+			width: 30%;
+		}
+		#footer {
+			clear: both;
+		}
+	</style>
+</head>
+<body>
+	
+	<div id="header">
+		<h1>Belajar Programming</h1>
+		<h2>Bersama Naufal IM</h2>
+	</div>
+
+	<div id="nav">
+		<ul>
+			<li><a href="#">Home</a></li>
+			<li><a href="#">Profil</a></li>
+			<li><a href="#">Kontak</a></li>
+		</ul>
+	</div>
+
+	<div id="main-content">
+		
+		<h1>Daftar Pelajaran</h1>
+
+		<figure>
+			<img src="file:///C:/Users/Nibros%20IM/Pictures/Front-End%20Dev.png" alt="peta belajar" height="200" width="300">
+			<figcaption>
+				Peta Belajar
+				<a href="#"> Belajar Koding</a>
+			</figcaption>
+		</figure>
+
+		 <!-- tag dialog hanya bisa tampil di btowser chrome  -->
+		<dialog open>
+			Belajar Membuat Website dengan Mudah
+		</dialog>
+
+		<br/><br/>
+
+		<details>
+			<summary>
+				Info Belajar Koding
+			</summary>
+			<p>Belajar Membuat Website</p>
+		</details>
+
+		<div>
+			<h2>Input baru di HTML5</h2>
+			<form>
+				<input type="search" name="search" placeholder="cari...">
+				<input type="email" name="email" required placeholder="email">
+				<input type="range" min="1" max="100" id="batas" value="0" > <br><br>
+				<input type="date" name="dateholder" min="1990-01-01" max="2019-01-01">
+				<input type="color" name="color">		
+				<input type="submit">
+			</form>
+		</div>
+
+		<div>
+			<h2>Memasukkan video pada Website</h2>
+			<video controls poster="gambar.png">
+				<source src="media/naruto.mp4" type="video/mp4">	
+			</video>
+		</div>
+
+		<div>
+			<h2>Mengunakan Audio</h2>
+			<audio autoplay controls>
+				<source src="media/yui.mp3" type="audio/mp3">
+			</audio>
+		</div>
+
+		<div>
+			<h2>HTML</h2>
+			<p>Membuat Struktur website dengan html</p>
+		</div>
+
+		<div>
+			<h2>CSS</h2>
+			<p>Menghias website dengan css</p>
+		</div>
+
+		<div>
+			<h2>JavaScript</h2>
+			<p>Membuat website lebih interaktif dengan JavaScript</p>
+		</div>
+
+	</div>
+
+	<div id="sidebar-content">
+		<h2>Daftar Artikel</h2>
+		<a href="#">Intro HTML</a> <br>
+		<a href="#">Mulai belajar website</a> <br>
+		<a href="#">Berguru sampai mengerti koding</a>
+	</div>
+
+	<div id="footer">
+		<p>&copy; 2016 Naufal IM</p>
+	</div>
+</body>
+</html>

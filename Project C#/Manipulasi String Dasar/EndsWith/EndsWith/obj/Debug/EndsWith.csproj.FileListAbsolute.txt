@@ -1,0 +1,1 @@
+E:\Project\Project C#\Manipulasi String Dasar\EndsWith\EndsWith\bin\Debug\EndsWith.exe.config

@@ -1,0 +1,6 @@
+E:\Project\Project C#\Manipulasi String Dasar\Length\Length\bin\Debug\Length.exe.config
+E:\Project\Project C#\Manipulasi String Dasar\Length\Length\bin\Debug\Length.exe
+E:\Project\Project C#\Manipulasi String Dasar\Length\Length\bin\Debug\Length.pdb
+E:\Project\Project C#\Manipulasi String Dasar\Length\Length\obj\Debug\Length.csprojResolveAssemblyReference.cache
+E:\Project\Project C#\Manipulasi String Dasar\Length\Length\obj\Debug\Length.exe
+E:\Project\Project C#\Manipulasi String Dasar\Length\Length\obj\Debug\Length.pdb

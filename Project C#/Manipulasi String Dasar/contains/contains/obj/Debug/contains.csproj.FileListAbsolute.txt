@@ -1,0 +1,5 @@
+E:\Project\Project C#\Manipulasi String Dasar\contains\contains\bin\Debug\contains.exe.config
+E:\Project\Project C#\Manipulasi String Dasar\contains\contains\bin\Debug\contains.exe
+E:\Project\Project C#\Manipulasi String Dasar\contains\contains\bin\Debug\contains.pdb
+E:\Project\Project C#\Manipulasi String Dasar\contains\contains\obj\Debug\contains.exe
+E:\Project\Project C#\Manipulasi String Dasar\contains\contains\obj\Debug\contains.pdb

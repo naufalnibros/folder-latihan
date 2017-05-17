@@ -1,0 +1,6 @@
+E:\Project C#\Dasar CSharp\Dasar CSharp\bin\Debug\Dasar CSharp.exe.config
+E:\Project C#\Dasar CSharp\Dasar CSharp\bin\Debug\Dasar CSharp.exe
+E:\Project C#\Dasar CSharp\Dasar CSharp\bin\Debug\Dasar CSharp.pdb
+E:\Project C#\Dasar CSharp\Dasar CSharp\obj\Debug\Dasar CSharp.csprojResolveAssemblyReference.cache
+E:\Project C#\Dasar CSharp\Dasar CSharp\obj\Debug\Dasar CSharp.exe
+E:\Project C#\Dasar CSharp\Dasar CSharp\obj\Debug\Dasar CSharp.pdb

@@ -1,0 +1,279 @@
+.clear::after, 
+.inner::after, 
+.entry-content::after, 
+.entry-footer::after, 
+.comment-content::after, 
+.site-header::after, 
+.site-content::after, 
+.site-footer::after, 
+.primary-menu-container::after, 
+.post-meta::after, 
+.entry-footer 
+.meta-wrapper::after, 
+.nav-links::after, 
+.post-categories::after, 
+#content::after, 
+#header-search::after, 
+#secondary-menu::after, 
+#primary-menu::after {
+    clear: both;
+}
+
+.clear::before, 
+.inner::before, 
+.entry-content::before, 
+.entry-footer::before, 
+.comment-content::before, 
+.site-header::before, 
+.site-content::before, 
+.site-footer::before, 
+.primary-menu-container::before, 
+.post-meta::before, 
+.entry-footer 
+.meta-wrapper::before, 
+.nav-links::before, 
+.post-categories::before, 
+#content::before, 
+#header-search::before, 
+#secondary-menu::before, 
+#primary-menu::before, 
+.clear::after, 
+.inner::after, 
+.entry-content::after, 
+.entry-footer::after, 
+.comment-content::after, 
+.site-header::after, 
+.site-content::after, 
+.site-footer::after, 
+.primary-menu-container::after, 
+.post-meta::after, 
+.entry-footer 
+.meta-wrapper::after, 
+.nav-links::after, 
+.post-categories::after, 
+#content::after, 
+#header-search::after, 
+#secondary-menu::after, 
+#primary-menu::after {
+    content: " ";
+    display: table;
+}
+
+ /* Elemen Pseudo */
+
+#masthead {
+    position: relative;
+    z-index: 10;
+}
+
+article, aside, details, figcaption, figure, footer, header, main, menu, nav, section, summary {
+    display: block;
+}
+
+*, *::before, *::after {
+    box-sizing: inherit;
+}
+
+/* Diwarisi dari body */
+
+body, button, input, select, textarea {
+    color: #BC3030;
+    font-family: "Source Sans Pro", sans-serif;
+    font-size: 0.875rem;
+    line-height: 1.65;
+}
+
+/* diwarisi dari html */
+
+html {
+    font-family: sans-serif;
+    -webkit-text-size-adjust: 100%;
+}
+
+.site-header-top {
+    padding: 15px 0;
+}
+
+.site-header-top, .site-footer-bottom {
+    background: #2d3642;
+    box-sizing: content-box;
+    color: rgba(255, 255, 255, 0.63);
+    min-height: 1.75rem;
+    padding: 1.25em 0;
+    text-shadow: 0 1px 1px rgba(0, 0, 0, 0.1);
+}
+
+.site-header-main {
+    background: #20b2aa;
+    color: #fff;
+    padding: 23px 0;
+}
+
+.site-header-main .inner {
+    position: relative;
+}
+
+#content, .inner {
+    width: 1170px;
+}
+
+#content, .inner {
+    padding-left: 30px;
+    padding-right: 30px;
+}
+
+#content, .inner {
+    margin: 0 auto;
+    max-width: 100%;
+    padding-left: 24px;
+    padding-right: 24px;
+}
+
+.site-branding {
+    max-width: auto;
+    width: auto;
+}
+
+.site-branding {
+    float: left;
+}
+
+.site-branding {
+    max-width: -webkit-calc(100% - 100px);
+    max-width: calc(100% - 100px);
+    width: 100%;
+}
+
+.site-header-main {
+    color: #fff;
+}
+
+#site-navigation {
+    margin-bottom: -1.2em;
+}
+
+#site-navigation {
+    clear: none;
+    float: right;
+    padding: 5px 0;
+}
+
+article, aside, details, figcaption, figure, footer, header, main, menu, nav, section, summary {
+    display: block;
+}
+
+button::-moz-focus-inner, input::-moz-focus-inner {
+    border: 0;
+    padding: 0;
+}
+
+.main-navigation .menu-toggle::before {
+    color: #20b2aa;
+    content: "\f419";
+    display: inline-block;
+    font-family: 'Genericons';
+    -webkit-font-smoothing: antialiased;
+    margin-right: 0.5em;
+    position: relative;
+    top: -0.05em;
+    -webkit-transform: scale(0.9);
+    -ms-transform: scale(0.9);
+    transform: scale(0.9);
+    -webkit-transition: color 90ms ease-in-out;
+    transition: color 90ms ease-in-out;
+    vertical-align: middle;
+    -moz-osx-font-smoothing: grayscale;
+}
+
+.site-header .menu-toggle, #mobile-menu {
+    display: none;
+}
+
+.main-navigation .menu-toggle {
+    right: 24px;
+}
+
+.main-navigation .menu-toggle {
+    background: white;
+    border-color: rgba(255, 255, 255, 0.85);
+    border-radius: 3px;
+    box-shadow: 0 0 0 0 transparent;
+    display: block;
+    font-size: 1.25em;
+    -webkit-font-smoothing: antialiased;
+    font-weight: bold;
+    height: 2.5em;
+    left: auto;
+    margin-top: -1.25em;
+    min-width: 5.5em;
+    padding: 0 0.8em;
+    position: absolute;
+    right: 24px;
+    top: 50%;
+    -webkit-transition: background 90ms ease-in-out, box-shadow 180ms ease-out;
+    transition: background 90ms ease-in-out, box-shadow 180ms ease-out;
+    -moz-osx-font-smoothing: grayscale;
+}
+
+.menu-toggle, form button, input[type="text"], input[type="email"], input[type="url"], input[type="password"], input[type="number"], input[type="search"], input[type="button"], input[type="reset"], input[type="submit"], textarea {
+    -webkit-appearance: none;
+    background: #fff;
+    border: solid 2px #eeeeee;
+    border-radius: 3px;
+    color: #555555;
+    font-size: inherit;
+    padding: 0 0;
+}
+
+utton, html input[type="button"], input[type="reset"], input[type="submit"] {
+    -webkit-appearance: button;
+    cursor: pointer;
+}
+
+button, select {
+    text-transform: none;
+}
+
+button {
+    overflow: visible;
+}
+
+button, input, optgroup, select, textarea {
+    color: inherit;
+    font: inherit;
+    margin: 0;
+}
+
+#primary-menu {
+    display: block;
+    margin: 0 0 0 0;
+    padding-top: 1px;
+}
+
+#primary-menu {
+    display: none;
+}
+
+ul {
+    list-style: disc;
+}
+
+ul, ol {
+    list-style-position: outside;
+    margin: 0 0 1.5em 0;
+    padding: 0 0 0 1.2em;
+}
+
+#primary-menu li {
+    list-style: none;
+}
+
+#primary-menu > li {
+    float: left;
+    font-size: 0.938rem;
+    margin-bottom: 1.2em;
+    margin-left: 15px;
+    margin-right: 0;
+    position: relative;
+}
+
